@@ -40,9 +40,6 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString(),
     });
 
-    // Simulate processing time
-    await new Promise((resolve) => setTimeout(resolve, 500));
-
     return NextResponse.json(
       {
         message: "Thank you for your message! We'll get back to you soon.",
