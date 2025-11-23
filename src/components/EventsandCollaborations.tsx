@@ -177,8 +177,7 @@ export default function EventsAndCollaborators() {
 
           {/* Description */}
           <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-12 max-w-5xl">
-            Our collaborators share our heart for children, joining us to bring color, comfort, and creativity to hospital spaces. Together, we create moments of joy that remind every child they're not alone in their healing journey.
-          </p>
+Our collaborators share our heart for children, joining us to bring color, comfort, and creativity to hospital spaces. Together, we create moments of joy that remind every child they&apos;re not alone in their healing journey.          </p>
 
           {/* Collaborators Logos */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">

@@ -13,7 +13,7 @@ export default function ImpactStories() {
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Hannah"
     },
     {
-      quote: "The support we received transformed our daughter's recovery journey. Having caring volunteers brought joy to difficult days.",
+      quote: "The support we received transformed our daughter&apos;s recovery journey. Having caring volunteers brought joy to difficult days.",
       author: "Adebayo Michael",
       role: "Parent",
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Michael"
@@ -148,7 +148,7 @@ export default function ImpactStories() {
             </div>
 
             {/* Quote Mark */}
-            <div className="text-purple-300 text-8xl font-serif leading-none mb-6">"</div>
+            <div className="text-purple-300 text-8xl font-serif leading-none mb-6">&quot;</div>
 
             {/* Quote Text */}
             <p className="text-2xl md:text-3xl text-gray-700 leading-relaxed mb-12">

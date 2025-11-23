@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import React, { useState } from 'react';
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react';
@@ -132,6 +131,7 @@ export default function Home() {
   <EventsAndCollaborators />
   <Cta />
   <FAQSection />
+  <Gallery/>
   <Footer />
 
       </main>
