@@ -62,10 +62,10 @@ export default function AboutUsSection() {
             <div className="absolute -left-12 top-28 w-16 h-1 bg-yellow-400 transform -rotate-45"></div>
 
             <div>
-              <h3 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-2">
+              <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-2">
                 Transforming Lives Through
               </h3>
-              <h3 className="text-4xl lg:text-5xl font-bold text-yellow-400">
+              <h3 className="text-2xl lg:text-3xl font-bold text-yellow-400">
                 Therapeutic <span className="text-gray-800">Play</span>
               </h3>
             </div>
@@ -98,16 +98,15 @@ export default function AboutUsSection() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="absolute bottom-8 right-8 w-32 h-1 bg-yellow-400 transform rotate-45 z-10"></div>
-            <div className="absolute bottom-4 right-4 w-32 h-1 bg-yellow-400 transform -rotate-45 z-10"></div>
+            
 
             <div className="rounded-3xl overflow-hidden shadow-2xl">
-              <div className="aspect-[4/3] bg-gradient-to-br from-purple-100 to-purple-200">
-                {/* <img 
-                  src="/api/placeholder/800/600" 
+              <div className="aspect-[4/3] ">
+                <img 
+                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952062/about-name-image_jhzfso.png" 
                   alt="Orchids team members in purple and yellow shirts"
                   className="w-full h-full object-cover"
-                /> */}
+                />
               </div>
             </div>
           </div>

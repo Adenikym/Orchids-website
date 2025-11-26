@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function OurWork() {
   return (
-    <section className="py-16 px-6 bg-[linear-gradient(180deg,#fbf7ff,rgba(251,247,255,0.6))]">
+    <section  className="py-16 px-6 bg-[#f8f2fc]">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center mb-8">
           <h2 className="text-purple-600 font-semibold tracking-widest mr-4">OUR WORK</h2>
@@ -15,8 +15,8 @@ export default function OurWork() {
         <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
           {/* Card 1 */}
           <article className="bg-white rounded-2xl shadow-md overflow-hidden">
-            <div className="relative h-48 bg-gray-100">
-              <Image src="/images/our-work-ward-visits.svg" alt="Ward Visits" fill className="object-cover" />
+            <div className="relative h-[318px] ">
+              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952096/tori-bubbles_wm4b2x.png" alt="Ward Visits" fill className="object-cover" />
             </div>
             <div className="p-6">
               <h3 className="text-lg font-semibold mb-2">Ward Visits</h3>
@@ -29,8 +29,8 @@ export default function OurWork() {
 
           {/* Card 2 */}
           <article className="bg-white rounded-2xl shadow-md overflow-hidden">
-            <div className="relative h-48 bg-gray-100">
-              <Image src="/images/our-work-events.svg" alt="Events" fill className="object-cover" />
+            <div className="relative h-[318px] ">
+              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952029/liwom-group_lho9in.png" alt="Events" fill className="object-cover" />
             </div>
             <div className="p-6">
               <h3 className="text-lg font-semibold mb-2">Events</h3>
@@ -43,8 +43,8 @@ export default function OurWork() {
 
           {/* Card 3 */}
           <article className="bg-white rounded-2xl shadow-md overflow-hidden">
-            <div className="relative h-48 bg-gray-100">
-              <Image src="/images/our-work-play-therapy.svg" alt="Play Therapy Programs" fill className="object-cover" />
+            <div className="relative h-[318px] ">
+              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952062/center-art_m6veu2.png" alt="Play Therapy Programs" fill className="object-cover" />
             </div>
             <div className="p-6">
               <h3 className="text-lg font-semibold mb-2">Play Therapy Programs</h3>

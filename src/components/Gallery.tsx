@@ -139,7 +139,7 @@ export default function Gallery() {
               )}
 
               {/* Gallery Card */}
-              <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className=" rounded-3xl overflow-hidden  hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={item.image}

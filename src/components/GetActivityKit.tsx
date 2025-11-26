@@ -87,7 +87,7 @@ export default function ImpactStories() {
               {/* Top Left Image */}
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg relative">
                 <Image 
-                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762977627/Rectangle_14_1_tsxbbm.png.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=400&fit=crop" 
+                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952127/zeenat-with-kids_vnpj12.png" 
                   alt="Children with volunteer" 
                   fill
                   className="object-cover"

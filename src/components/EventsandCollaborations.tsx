@@ -22,19 +22,19 @@ export default function EventsAndCollaborators() {
   const collaborators = [
     {
       name: "Rotaract",
-      logo: "https://via.placeholder.com/200x80/e63946/ffffff?text=Rotaract"
+      logo: "https://res.cloudinary.com/da1snxdv9/image/upload/v1762952160/rotaract-logo_wtoyrc.png"
     },
     {
       name: "Mafita Initiative",
-      logo: "https://via.placeholder.com/200x80/4361ee/ffffff?text=Mafita"
+      logo: "https://res.cloudinary.com/da1snxdv9/image/upload/v1763988445/slazzer-preview-xfw0y_1_1_ewnjzm.png"
     },
     {
       name: "Chateaurare",
-      logo: "https://via.placeholder.com/200x80/2d6a4f/ffffff?text=Chateaurare"
+      logo: "https://res.cloudinary.com/da1snxdv9/image/upload/v1762952062/Chateaurare_rl5bbx.png"
     },
     {
       name: "Living Word Mission",
-      logo: "https://via.placeholder.com/200x80/f72585/ffffff?text=Living+Word"
+      logo: "https://res.cloudinary.com/da1snxdv9/image/upload/v1762952028/liwom-logo_wlt0a4.png"
     }
   ];
 
@@ -109,7 +109,7 @@ export default function EventsAndCollaborators() {
             {events.map((event, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+                className="bg-white rounded-3xl transition-shadow"
               >
                 <div className="flex gap-6">
                   {/* Date Box */}
@@ -184,7 +184,7 @@ Our collaborators share our heart for children, joining us to bring color, comfo
             {collaborators.map((collaborator, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow flex items-center justify-center"
+                className=" rounded-2xl p-6  transition-shadow flex items-center justify-center"
               >
                 <div className="relative w-full h-20">
                   <Image
