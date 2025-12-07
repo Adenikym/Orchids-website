@@ -37,7 +37,7 @@ export default function AboutHero() {
             <h1 className="text-5xl md:text-7xl font-bold text-purple-400 mb-4 tracking-tight">
               ABOUT US
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-yellow-400 mx-auto" />
+           
           </div>
 
           {/* Main Content Grid */}
