@@ -1,15 +1,7 @@
 import { useState } from 'react';
 
 export default function ActivityKit() {
-  const [quantity, setQuantity] = useState(1);
-  const unitPrice = 2000;
 
-  const handleIncrement = () => setQuantity(prev => prev + 1);
-  const handleDecrement = () => setQuantity(prev => Math.max(1, prev - 1));
-  const handleChange = (e) => {
-    const value = parseInt(e.target.value) || 1;
-    setQuantity(Math.max(1, value));
-  };
 
   return (
     <div className=" bg-gradient-to-br from-purple-50 via-white to-purple-50">
