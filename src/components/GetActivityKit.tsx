@@ -87,9 +87,11 @@ export default function ImpactStories() {
               {/* Top Left Image */}
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg relative">
                 <Image 
+                 height="257"
+                width="255"
                   src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952127/zeenat-with-kids_vnpj12.png" 
                   alt="Children with volunteer" 
-                  fill
+                  
                   className="object-cover"
                 />
               </div>
@@ -107,10 +109,12 @@ export default function ImpactStories() {
 
               {/* Bottom Right Image */}
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg relative">
-                <Image 
+                <Image
+                height="257"
+                width="255" 
                   src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762977627/Rectangle_14_1_tsxbbm.png" 
                   alt="Group of happy children" 
-                  fill
+                  
                   className="object-cover"
                 />
               </div>
@@ -159,9 +163,11 @@ export default function ImpactStories() {
             <div className="flex items-center gap-4 mb-8">
               <div className="w-20 h-20 rounded-full overflow-hidden bg-gray-300 border-4 border-white shadow-lg relative">
                 <Image 
+                height="102"
+                width="102"
                   src={stories[currentStory].avatar}
                   alt={stories[currentStory].author}
-                  fill
+                  
                   className="object-cover"
                 />
               </div>

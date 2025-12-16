@@ -188,9 +188,11 @@ Our collaborators share our heart for children, joining us to bring color, comfo
               >
                 <div className="relative w-full h-20">
                   <Image
+                  height={117}
+                  width={234}
                     src={collaborator.logo}
                     alt={collaborator.name}
-                    fill
+                    
                     className="object-contain"
                   />
                 </div>

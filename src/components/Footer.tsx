@@ -45,9 +45,11 @@ export default function Footer() {
           <div className="flex flex-col items-start">
             <div className="relative w-40 h-20 mb-4">
               <Image
+                height={45}
+                width={143}
                 src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952210/slazzer-preview-31w15_4_wyinhi.png"
                 alt="Orchids Initiative Logo"
-                fill
+                
                 className="object-contain"
               />
             </div>

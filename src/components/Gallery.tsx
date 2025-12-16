@@ -142,9 +142,11 @@ export default function Gallery() {
               <div className=" rounded-3xl overflow-hidden  hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
+                   height="393"
+                  width="396"
                     src={item.image}
                     alt={item.title}
-                    fill
+                    
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   

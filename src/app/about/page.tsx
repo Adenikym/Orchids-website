@@ -1,6 +1,5 @@
 'use client';
 import React from "react";
-import Link from "next/link";
 import OurHistory from "@/components/OurHistory";
 import Navbar from "../../components/Navbar";
 import Footer from "@/components/Footer";

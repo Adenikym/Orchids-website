@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function ActivityKit() {
   const [quantity, setQuantity] = useState(1);
+  const [email, setEmail] = useState('');
   const unitPrice = 2000;
 
   const handleIncrement = () => setQuantity(prev => prev + 1);
@@ -84,6 +86,21 @@ export default function ActivityKit() {
               </div>
             </div>
 
+            {/* Email Input */}
+            <div className="space-y-3">
+              <label htmlFor="email" className="block text-lg font-semibold text-gray-700">
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email address here"
+                className="w-full px-6 py-4 rounded-full border-2 border-purple-200 focus:outline-none focus:border-purple-400 text-gray-700 placeholder-gray-300"
+              />
+            </div>
+
             {/* CTA Button */}
             <button className="w-full bg-white border-2 border-purple-300 text-purple-500 py-4 rounded-full font-semibold text-lg hover:bg-purple-50 hover:border-purple-400 transition-all duration-300 shadow-sm hover:shadow-md">
               Gift a Smile Today!
@@ -93,7 +110,9 @@ export default function ActivityKit() {
           {/* Right Column - Image */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
+              <Image
+                width="618"
+                height="678"
                 src="https://res.cloudinary.com/da1snxdv9/image/upload/v1765116195/Rectangle_14_2_vzlbqx.png"
                 alt="Children doing creative activities with colorful paper crafts"
                 className="w-full h-auto object-cover"

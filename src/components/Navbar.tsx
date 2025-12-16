@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
+import { Modal } from '../components/ReusableModal';
+import ContactUsContent from './ContactUsContent';
+
 
 
  const navLinks = [
@@ -9,26 +12,29 @@ import { Menu, X } from 'lucide-react';
     { name: 'About', href: '/about' },
     { name: 'Our Work', href: '/work' },
     { name: 'Donation', href: '/donation' },
-    { name: 'Gallery', href: '/gallery' },
+    // { name: 'Gallery', href: '/gallery' },
     { name: 'Contact us', href: '/contact' }
   ];
 
 export default function Navbar() {
       const [isMenuOpen, setIsMenuOpen] = useState(false);
+      const [isOpen, setIsOpen] = useState(false);
 
   return (
-          <nav className="bg-white shadow-sm">
+    <nav className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-                     <div className="relative w-36 h-11 mb-4">
-                        <Image
-                          src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762978493/orchids-purple-logo_qmdft7.png"
-                          alt="Orchids Initiative Logo"
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
+          <div className="relative w-36 h-11 mb-4">
+            <Image
+              height="44"
+              width="143"
+              src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762978493/orchids-purple-logo_qmdft7.png"
+              alt="Orchids Initiative Logo"
+              
+              className="object-contain"
+            />
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -46,17 +52,17 @@ export default function Navbar() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
             <a
-              href="/donate"
+              href="/donation"
               className="px-6 py-2.5 bg-gradient-to-r from-purple-400 to-purple-500 text-white rounded-full hover:from-purple-500 hover:to-purple-600 transition-all duration-200 text-sm font-medium shadow-md hover:shadow-lg"
             >
               Donate
             </a>
-            <a
-              href="/volunteer"
+            <button
+              onClick={() => setIsOpen(true)}
               className="px-6 py-2.5 bg-white border-2 border-gray-300 text-gray-700 rounded-full hover:border-purple-400 hover:text-purple-500 transition-all duration-200 text-sm font-medium"
             >
               Volunteer
-            </a>
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -87,21 +93,25 @@ export default function Navbar() {
             ))}
             <div className="pt-4 space-y-2">
               <a
-                href="/donate"
+                href="/donation"
                 className="block w-full text-center px-6 py-2.5 bg-gradient-to-r from-purple-400 to-purple-500 text-white rounded-full hover:from-purple-500 hover:to-purple-600 transition-all duration-200 text-sm font-medium"
               >
                 Donate
               </a>
-              <a
-                href="/volunteer"
+              <button
+                onClick={() => setIsOpen(true)}
                 className="block w-full text-center px-6 py-2.5 bg-white border-2 border-gray-300 text-gray-700 rounded-full hover:border-purple-400 hover:text-purple-500 transition-all duration-200 text-sm font-medium"
               >
                 Volunteer
-              </a>
+              </button>
             </div>
           </div>
         </div>
       )}
+      
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} maxWidth="xl">
+        <ContactUsContent />
+      </Modal>
     </nav>
   );
 }

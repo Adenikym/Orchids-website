@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Image from 'next/image';
 
 // Type definitions
 interface ProgramSectionProps {
@@ -41,10 +42,11 @@ const ProgramSection: FC<ProgramSectionProps> = ({
           {/* Image Column */}
           <div className={`relative ${imagePosition === 'right' ? 'lg:col-start-2' : ''}`}>
             <div className="relative rounded-3xl overflow-hidden ">
-              <img
+              <Image
                 src={imageSrc}
                 alt={imageAlt}
                 className="w-full h-auto object-cover"
+                fill
               />
             </div>
             {/* Decorative circles */}

@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className="flex bg-white p-20  items-center justify-between">
 
       <div className="">
-        <h2 className="text-5xl">Helping Children heal <br/> through Therapeutic <br/> forms of play</h2>
+        <h2 className="text-5xl text-[#3D3E3F]  font-semibold leading-14">Helping <span className="text-purple-400">Children</span> heal <br/> through Therapeutic <br/> forms of play</h2>
         <p className="mt-6 text-lg text-gray-600">
           Through Arts, Crafts, Music and STEM activities,<br/> we bring hope and healing to pediatric patients.
           </p>

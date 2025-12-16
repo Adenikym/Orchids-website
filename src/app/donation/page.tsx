@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState, FormEvent } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "@/components/Footer";
@@ -19,6 +18,8 @@ export default function Donation() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("loading");
+console.log(status)
+console.log(responseMessage)
 
     try {
       const response = await fetch("/api/contact", {
@@ -44,6 +45,8 @@ export default function Donation() {
       setResponseMessage("Failed to send message. Please try again.");
     }
   };
+
+  console.log(handleSubmit);
 
   return (
     <div className="min-h-screen flex flex-col">

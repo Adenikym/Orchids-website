@@ -73,9 +73,11 @@ export default function AboutHero() {
             <div className="order-1 md:order-2 relative">
               <div className="relative rounded-full overflow-hidden border-8 border-white shadow-2xl aspect-square">
                 <Image
+                 height="650"
+                 width="650"
                   src="https://res.cloudinary.com/da1snxdv9/image/upload/v1764513318/Group_77_1_tr0da9.png"
                   alt="Orchids team members wearing purple and yellow branded t-shirts"
-                  fill
+                  
                   className="object-cover"
                   priority
                 />
@@ -89,9 +91,11 @@ export default function AboutHero() {
           <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
             <div className="relative aspect-video bg-gray-900">
               <Image
+                width={1240}
+                  height={600}
                 src="https://res.cloudinary.com/da1snxdv9/image/upload/v1764513384/Rectangle_4_p6kh4f.png"
                 alt="Orchids team group photo"
-                fill
+                
                 className="object-cover opacity-90"
               />
               

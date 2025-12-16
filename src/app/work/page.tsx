@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+
 import { useState, FormEvent } from "react";
 import Navbar from "../../components/Navbar";
 import WorkHero from "../../components/WorkHero";
@@ -20,6 +20,8 @@ export default function Contact() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("loading");
+    console.log(status)
+    console.log(responseMessage)
 
     try {
       const response = await fetch("/api/contact", {
@@ -45,6 +47,7 @@ export default function Contact() {
       setResponseMessage("Failed to send message. Please try again.");
     }
   };
+  console.log(handleSubmit);
 
   return (
     <div className="min-h-screen flex flex-col max-w-full overflow-x-hidden bg-white">

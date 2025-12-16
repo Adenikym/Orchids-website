@@ -19,7 +19,7 @@ import Footer from "@/components/Footer";
     { name: 'About', href: '/about' },
     { name: 'Our Work', href: '/work' },
     { name: 'Donation', href: '/donation' },
-    { name: 'Gallery', href: '/gallery' },
+    // { name: 'Gallery', href: '/gallery' },
     { name: 'Contact us', href: '/contact' }
   ];
 
@@ -36,9 +36,11 @@ export default function Home() {
           {/* Logo */}
                      <div className="relative w-36 h-11 mb-4">
                         <Image
+                         height="44"
+                         width="143"
                           src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762978493/orchids-purple-logo_qmdft7.png"
                           alt="Orchids Initiative Logo"
-                          fill
+                          
                           className="object-contain"
                         />
                       </div>
