@@ -279,7 +279,7 @@ function ContactUsModal() {
 function ActivityKitModal() {
   const [quantity, setQuantity] = useState(1);
   const [email, setEmail] = useState('');
-  const unitPrice = 2000;
+  const unitPrice = 3000;
 
   const handleIncrement = () => setQuantity(prev => prev + 1);
   const handleDecrement = () => setQuantity(prev => Math.max(1, prev - 1));

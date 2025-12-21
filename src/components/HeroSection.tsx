@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <div className="flex bg-white p-20  items-center justify-between">
+    <div className=" flex flex-col-reverse md:flex-row bg-white p-20  items-center justify-between">
 
       <div className="">
-        <h2 className="text-5xl text-[#3D3E3F]  font-semibold leading-14">Helping <span className="text-purple-400">Children</span> heal <br/> through Therapeutic <br/> forms of play</h2>
+        <h2 className="text-2xl md:text-5xl text-[#3D3E3F]  font-semibold leading-14 w-[351px] md:w-[546px]">Helping <span className="text-purple-400">Children</span> heal through Therapeutic forms of play</h2>
         <p className="mt-6 text-lg text-gray-600">
           Through Arts, Crafts, Music and STEM activities,<br/> we bring hope and healing to pediatric patients.
           </p>
@@ -26,16 +26,46 @@ export default function HeroSection() {
             </a>
           </div>
 
-          <div className="mt-14">
+<div className="mt-14 flex items-center gap-12">
+            {/* Stat 1 */}
+            <div className="flex items-center gap-3">
+              <div>
+                <div className="text-4xl font-bold text-[#3D3E3F]">1k+</div>
+                <div className="text-sm text-gray-600 mt-1">Children<br/>Reached</div>
+              </div>
+              <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.0215 0L19.2143 7.20715C19.3151 10.9727 24.09 12.5242 26.3849 9.53702L30.7772 3.81966L26.6969 9.76372C24.5651 12.8694 27.5162 16.9312 31.1286 15.8634L38.0426 13.8197L31.2478 16.2302C27.6976 17.4897 27.6976 22.5103 31.2478 23.7698L38.0426 26.1803L31.1286 24.1366C27.5162 23.0688 24.5651 27.1306 26.6969 30.2363L30.7772 36.1803L26.3849 30.463C24.09 27.4758 19.3151 29.0273 19.2143 32.7929L19.0215 40L18.8286 32.7929C18.7279 29.0273 13.9529 27.4758 11.658 30.463L7.26578 36.1803L11.346 30.2363C13.4779 27.1306 10.5268 23.0688 6.91435 24.1366L0.000354767 26.1803L6.79517 23.7698C10.3453 22.5103 10.3453 17.4897 6.79517 16.2302L0.000354767 13.8197L6.91435 15.8634C10.5268 16.9312 13.4779 12.8694 11.346 9.76372L7.26578 3.81966L11.658 9.53702C13.9529 12.5242 18.7279 10.9727 18.8286 7.20715L19.0215 0Z" fill="#F1D900"/>
+</svg>
 
+            </div>
+
+            {/* Stat 2 */}
+            <div className="flex items-center gap-3">
+              <div>
+                <div className="text-4xl font-bold text-[#3D3E3F]">5+</div>
+                <div className="text-sm text-gray-600 mt-1">Supportive<br/>Partners</div>
+              </div>
+              <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.0215 0L19.2143 7.20715C19.3151 10.9727 24.09 12.5242 26.3849 9.53702L30.7772 3.81966L26.6969 9.76372C24.5651 12.8694 27.5162 16.9312 31.1286 15.8634L38.0426 13.8197L31.2478 16.2302C27.6976 17.4897 27.6976 22.5103 31.2478 23.7698L38.0426 26.1803L31.1286 24.1366C27.5162 23.0688 24.5651 27.1306 26.6969 30.2363L30.7772 36.1803L26.3849 30.463C24.09 27.4758 19.3151 29.0273 19.2143 32.7929L19.0215 40L18.8286 32.7929C18.7279 29.0273 13.9529 27.4758 11.658 30.463L7.26578 36.1803L11.346 30.2363C13.4779 27.1306 10.5268 23.0688 6.91435 24.1366L0.000354767 26.1803L6.79517 23.7698C10.3453 22.5103 10.3453 17.4897 6.79517 16.2302L0.000354767 13.8197L6.91435 15.8634C10.5268 16.9312 13.4779 12.8694 11.346 9.76372L7.26578 3.81966L11.658 9.53702C13.9529 12.5242 18.7279 10.9727 18.8286 7.20715L19.0215 0Z" fill="#F1D900"/>
+</svg>
+
+            </div>
+
+            {/* Stat 3 */}
+            <div className="flex items-center gap-3">
+              <div>
+                <div className="text-4xl font-bold text-[#3D3E3F]">50+</div>
+                <div className="text-sm text-gray-600 mt-1">Orchid<br/>Volunteers</div>
+              </div>
+            </div>
           </div>
       </div>
    
 
-    <div className="">
+    <div className="hidden md:block">
 
              <Image
-                className='absolute top-100'
+                className='absolute top-100 hidden md:block'
                 src="https://res.cloudinary.com/da1snxdv9/image/upload/v1763238763/realistic-scene-with-young-children-with-autism-playing_3_zzwrwf.png"
                 alt="Orchids Initiative Logo"
                 width={546}

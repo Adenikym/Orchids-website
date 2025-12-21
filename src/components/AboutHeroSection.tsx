@@ -4,7 +4,7 @@ import { Sparkles, Heart, Star } from 'lucide-react';
 
 export default function AboutHero() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-purple-50 via-white to-yellow-50 overflow-hidden">
+    <section className="relative min-h-screen bg-white overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-10 left-10 w-12 h-12 text-purple-400 opacity-60">
         <Sparkles className="w-full h-full" />

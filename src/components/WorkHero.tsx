@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import {initializePayment} from "../app/api";
+
+
 
 export default function ActivityKit() {
   const [quantity, setQuantity] = useState(1);
   const [email, setEmail] = useState('');
-  const unitPrice = 2000;
+  const unitPrice = 3000;
 
   const handleIncrement = () => setQuantity(prev => prev + 1);
   const handleDecrement = () => setQuantity(prev => Math.max(1, prev - 1));
@@ -13,8 +16,23 @@ export default function ActivityKit() {
     setQuantity(Math.max(1, value));
   };
 
+  const handleSubmit = async () => {
+    const paymentData = {
+      activityKitId: 'e1b868ff-e7ba-4eb1-9cba-ba79d9f05dca',
+      email,
+      type: 'activity_kit',
+       amount: quantity * unitPrice , 
+      quantity
+    };
+    await initializePayment(paymentData).then((response) => {
+      console.log(response);
+      window.location.href = response.authorizationUrl;
+    });
+
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-50">
+    <div className="min-h-screen bg-white">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-6 py-12">
         <h1 className="text-5xl font-bold text-purple-400 mb-6">OUR WORK</h1>
@@ -102,7 +120,7 @@ export default function ActivityKit() {
             </div>
 
             {/* CTA Button */}
-            <button className="w-full bg-white border-2 border-purple-300 text-purple-500 py-4 rounded-full font-semibold text-lg hover:bg-purple-50 hover:border-purple-400 transition-all duration-300 shadow-sm hover:shadow-md">
+            <button onClick={handleSubmit} className="w-full bg-white border-2 border-purple-300 text-purple-500 py-4 rounded-full font-semibold text-lg hover:bg-purple-50 hover:border-purple-400 transition-all duration-300 shadow-sm hover:shadow-md">
               Gift a Smile Today!
             </button>
           </div>

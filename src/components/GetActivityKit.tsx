@@ -35,7 +35,7 @@ export default function ImpactStories() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8 md:p-16">
+    <div className="min-h-screen bg-[#FAFAFA] p-8 md:p-16">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12 relative">
@@ -80,19 +80,20 @@ export default function ImpactStories() {
         </div>
 
         {/* Main Content */}
+<div className="min-h-screen  flex items-center justify-center p-8">
+      <div className="max-w-6xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Grid */}
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
               {/* Top Left Image */}
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg relative">
-                <Image 
-                 height="257"
-                width="255"
-                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952127/zeenat-with-kids_vnpj12.png" 
+                <img 
+                  height="257"
+                  width="255"
+                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952127/zeenat-with-kids_vnpj12.png"
                   alt="Children with volunteer" 
-                  
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
 
@@ -109,13 +110,12 @@ export default function ImpactStories() {
 
               {/* Bottom Right Image */}
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg relative">
-                <Image
-                height="257"
-                width="255" 
-                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762977627/Rectangle_14_1_tsxbbm.png" 
+                <img
+                  height="257"
+                  width="255" 
+                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762977627/Rectangle_14_1_tsxbbm.png"
                   alt="Group of happy children" 
-                  
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
             </div>
@@ -162,13 +162,12 @@ export default function ImpactStories() {
             {/* Author Info */}
             <div className="flex items-center gap-4 mb-8">
               <div className="w-20 h-20 rounded-full overflow-hidden bg-gray-300 border-4 border-white shadow-lg relative">
-                <Image 
-                height="102"
-                width="102"
+                <img 
+                  height="102"
+                  width="102"
                   src={stories[currentStory].avatar}
                   alt={stories[currentStory].author}
-                  
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
               <div>
@@ -214,6 +213,8 @@ export default function ImpactStories() {
             </div>
           </div>
         </div>
+      </div>
+    </div>
       </div>
     </div>
   );
