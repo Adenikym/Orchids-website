@@ -5,7 +5,7 @@ export default function AboutUsSection() {
   return (
     <section className="relative bg-gradient-to-br from-purple-50 via-white to-purple-50 py-20 lg:py-32 overflow-hidden">
       {/* Decorative Elements */}
-      <div className="absolute top-12 left-12 w-12 h-12 opacity-30">
+      {/* <div className="absolute top-12 left-12 w-12 h-12 opacity-30">
         <svg viewBox="0 0 50 50" className="w-full h-full">
           <circle cx="25" cy="25" r="20" fill="#c084fc" />
           <circle cx="25" cy="25" r="12" fill="#a855f7" />
@@ -14,10 +14,10 @@ export default function AboutUsSection() {
           <circle cx="15" cy="25" r="3" fill="#c084fc" />
           <circle cx="35" cy="25" r="3" fill="#c084fc" />
         </svg>
-      </div>
+      </div> */}
 
-      <div className="absolute top-16 right-24 w-8 h-1 bg-yellow-400 transform rotate-45"></div>
-      <div className="absolute top-12 right-20 w-8 h-1 bg-yellow-400 transform -rotate-45"></div>
+      <div className="absolute top-16 right-24 w-8 h-1 bg-yellow-400 transform rotate-45 hidden md:block"></div>
+      <div className="absolute top-12 right-20 w-8 h-1 bg-yellow-400 transform -rotate-45 hidden md:block"></div>
 
       <div className="absolute bottom-20 left-24 w-12 h-1 bg-yellow-400 transform rotate-45"></div>
       <div className="absolute bottom-16 left-20 w-12 h-1 bg-yellow-400 transform -rotate-45"></div>
@@ -46,7 +46,7 @@ export default function AboutUsSection() {
             <div className="flex items-center flex-1">
              
               
-              <h2 className="text-4xl lg:text-5xl font-bold text-purple-300 whitespace-nowrap px-4">
+              <h2 className="text-4xl lg:text-5xl font-bold text-purple-300 whitespace-nowrap px-0 md:px-4">
                 ABOUT US
               </h2>
               
@@ -59,8 +59,8 @@ export default function AboutUsSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8 relative">
-            <div className="absolute -left-8 top-32 w-16 h-1 bg-yellow-400 transform rotate-45"></div>
-            <div className="absolute -left-12 top-28 w-16 h-1 bg-yellow-400 transform -rotate-45"></div>
+            <div className="absolute -left-8 top-32 w-16 h-1 bg-yellow-400 transform rotate-45 hidden md:block"></div>
+            <div className="absolute -left-12 top-28 w-16 h-1 bg-yellow-400 transform -rotate-45 hidden md:block"></div>
 
             <div>
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-2">

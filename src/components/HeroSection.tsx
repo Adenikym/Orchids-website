@@ -3,11 +3,22 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <div className=" flex flex-col-reverse md:flex-row bg-white p-20  items-center justify-between">
+    <div className=" flex flex-col md:flex-row bg-white p--0 md:p-20  items-center justify-between overflow-hidden">
+       <Image
+                className='block md:hidden'
+                src="https://res.cloudinary.com/da1snxdv9/image/upload/v1766345121/Group_88_cwevg9.jpg"
+                alt="Orchids Initiative Logo"
+                width={347}
+                height={356}
+               
+                
+               
+              />
 
-      <div className="">
-        <h2 className="text-2xl md:text-5xl text-[#3D3E3F]  font-semibold leading-14 w-[351px] md:w-[546px]">Helping <span className="text-purple-400">Children</span> heal through Therapeutic forms of play</h2>
-        <p className="mt-6 text-lg text-gray-600">
+
+      <div className="p-4 md:p-0">
+        <h2 className="text-2xl md:text-5xl text-[#3D3E3F]  font-semibold md:leading-14 w-[351px] md:w-[546px] text-center md:text-left">Helping <span className="text-purple-400">Children</span> heal through Therapeutic forms of play</h2>
+        <p className="mt-6 text-xs md:text-lg text-center md:text-left text-gray-600">
           Through Arts, Crafts, Music and STEM activities,<br/> we bring hope and healing to pediatric patients.
           </p>
                     {/* CTA Buttons */}
@@ -26,35 +37,45 @@ export default function HeroSection() {
             </a>
           </div>
 
-<div className="mt-14 flex items-center gap-12">
+<div className="mt-14 flex items-center gap-6 md:gap-12 justify-center">
             {/* Stat 1 */}
             <div className="flex items-center gap-3">
               <div>
-                <div className="text-4xl font-bold text-[#3D3E3F]">1k+</div>
+                <div className="text-2xl md:text-4xl font-bold text-[#3D3E3F]">1k+</div>
                 <div className="text-sm text-gray-600 mt-1">Children<br/>Reached</div>
               </div>
-              <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+              <svg className='hidden md:block' width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.0215 0L19.2143 7.20715C19.3151 10.9727 24.09 12.5242 26.3849 9.53702L30.7772 3.81966L26.6969 9.76372C24.5651 12.8694 27.5162 16.9312 31.1286 15.8634L38.0426 13.8197L31.2478 16.2302C27.6976 17.4897 27.6976 22.5103 31.2478 23.7698L38.0426 26.1803L31.1286 24.1366C27.5162 23.0688 24.5651 27.1306 26.6969 30.2363L30.7772 36.1803L26.3849 30.463C24.09 27.4758 19.3151 29.0273 19.2143 32.7929L19.0215 40L18.8286 32.7929C18.7279 29.0273 13.9529 27.4758 11.658 30.463L7.26578 36.1803L11.346 30.2363C13.4779 27.1306 10.5268 23.0688 6.91435 24.1366L0.000354767 26.1803L6.79517 23.7698C10.3453 22.5103 10.3453 17.4897 6.79517 16.2302L0.000354767 13.8197L6.91435 15.8634C10.5268 16.9312 13.4779 12.8694 11.346 9.76372L7.26578 3.81966L11.658 9.53702C13.9529 12.5242 18.7279 10.9727 18.8286 7.20715L19.0215 0Z" fill="#F1D900"/>
 </svg>
+<svg className='blok md:hidden' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.6084 0L7.68554 2.88286C7.72584 4.3891 9.63582 5.00969 10.5538 3.81481L12.3107 1.52786L10.6786 3.90549C9.82584 5.14775 11.0063 6.77248 12.4513 6.34536L15.2169 5.52786L12.4989 6.49208C11.0789 6.99586 11.0789 9.00414 12.4989 9.50792L15.2169 10.4721L12.4513 9.65464C11.0063 9.22752 9.82584 10.8523 10.6786 12.0945L12.3107 14.4721L10.5538 12.1852C9.63582 10.9903 7.72584 11.6109 7.68554 13.1171L7.6084 16L7.53126 13.1171C7.49096 11.6109 5.58097 10.9903 4.66302 12.1852L2.90612 14.4721L4.53821 12.0945C5.39095 10.8523 4.21052 9.22752 2.76555 9.65464L-5.38826e-05 10.4721L2.71787 9.50792C4.13793 9.00414 4.13794 6.99586 2.71787 6.49208L-5.38826e-05 5.52786L2.76554 6.34535C4.21052 6.77248 5.39095 5.14775 4.53821 3.90549L2.90612 1.52786L4.66302 3.81481C5.58097 5.00969 7.49096 4.3891 7.53126 2.88286L7.6084 0Z" fill="#F1D900"/>
+</svg>
+
 
             </div>
 
             {/* Stat 2 */}
             <div className="flex items-center gap-3">
               <div>
-                <div className="text-4xl font-bold text-[#3D3E3F]">5+</div>
+                <div className="text-2xl md:text-4xl font-bold text-[#3D3E3F]">5+</div>
                 <div className="text-sm text-gray-600 mt-1">Supportive<br/>Partners</div>
               </div>
-              <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+              <svg className='hidden md:block' width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.0215 0L19.2143 7.20715C19.3151 10.9727 24.09 12.5242 26.3849 9.53702L30.7772 3.81966L26.6969 9.76372C24.5651 12.8694 27.5162 16.9312 31.1286 15.8634L38.0426 13.8197L31.2478 16.2302C27.6976 17.4897 27.6976 22.5103 31.2478 23.7698L38.0426 26.1803L31.1286 24.1366C27.5162 23.0688 24.5651 27.1306 26.6969 30.2363L30.7772 36.1803L26.3849 30.463C24.09 27.4758 19.3151 29.0273 19.2143 32.7929L19.0215 40L18.8286 32.7929C18.7279 29.0273 13.9529 27.4758 11.658 30.463L7.26578 36.1803L11.346 30.2363C13.4779 27.1306 10.5268 23.0688 6.91435 24.1366L0.000354767 26.1803L6.79517 23.7698C10.3453 22.5103 10.3453 17.4897 6.79517 16.2302L0.000354767 13.8197L6.91435 15.8634C10.5268 16.9312 13.4779 12.8694 11.346 9.76372L7.26578 3.81966L11.658 9.53702C13.9529 12.5242 18.7279 10.9727 18.8286 7.20715L19.0215 0Z" fill="#F1D900"/>
 </svg>
+<svg className='blok md:hidden' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.6084 0L7.68554 2.88286C7.72584 4.3891 9.63582 5.00969 10.5538 3.81481L12.3107 1.52786L10.6786 3.90549C9.82584 5.14775 11.0063 6.77248 12.4513 6.34536L15.2169 5.52786L12.4989 6.49208C11.0789 6.99586 11.0789 9.00414 12.4989 9.50792L15.2169 10.4721L12.4513 9.65464C11.0063 9.22752 9.82584 10.8523 10.6786 12.0945L12.3107 14.4721L10.5538 12.1852C9.63582 10.9903 7.72584 11.6109 7.68554 13.1171L7.6084 16L7.53126 13.1171C7.49096 11.6109 5.58097 10.9903 4.66302 12.1852L2.90612 14.4721L4.53821 12.0945C5.39095 10.8523 4.21052 9.22752 2.76555 9.65464L-5.38826e-05 10.4721L2.71787 9.50792C4.13793 9.00414 4.13794 6.99586 2.71787 6.49208L-5.38826e-05 5.52786L2.76554 6.34535C4.21052 6.77248 5.39095 5.14775 4.53821 3.90549L2.90612 1.52786L4.66302 3.81481C5.58097 5.00969 7.49096 4.3891 7.53126 2.88286L7.6084 0Z" fill="#F1D900"/>
+</svg>
+
 
             </div>
 
             {/* Stat 3 */}
             <div className="flex items-center gap-3">
               <div>
-                <div className="text-4xl font-bold text-[#3D3E3F]">50+</div>
+                <div className="text-2xl md:text-4xl font-bold text-[#3D3E3F]">50+</div>
                 <div className="text-sm text-gray-600 mt-1">Orchid<br/>Volunteers</div>
               </div>
             </div>

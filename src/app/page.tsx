@@ -27,7 +27,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col overflow-hidden">
       {/* Header/Navigation */}
   
        <nav className="bg-white shadow-sm">
