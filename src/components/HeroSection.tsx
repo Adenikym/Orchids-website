@@ -37,7 +37,7 @@ export default function HeroSection() {
             </a>
           </div>
 
-<div className="mt-14 flex items-center gap-6 md:gap-12 justify-center">
+<div className="mt-14 flex items-center gap-6 md:gap-12 justify-center md:justify-start">
             {/* Stat 1 */}
             <div className="flex items-center gap-3">
               <div>
