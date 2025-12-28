@@ -55,13 +55,6 @@ export default function ActivityKit() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header Section */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <h1 className="text-5xl font-bold text-purple-400 mb-6">OUR WORK</h1>
-        <p className="text-gray-700 text-lg max-w-6xl leading-relaxed">
-          At Orchids Pediatric Foundation, we believe that play is medicine. Through our programs, we bring emotional comfort, creativity, and color into the lives of hospitalized children—helping them heal not just physically, but emotionally and mentally too.
-        </p>
-      </div>
 
       {/* Activity Kit Section */}
       <div className="max-w-7xl mx-auto px-6 py-12">
@@ -91,7 +84,7 @@ export default function ActivityKit() {
               <div className="flex items-center gap-4">
                 <button
                   onClick={handleDecrement}
-                  className="w-12 h-12 rounded-lg border-2 border-purple-200 hover:border-purple-400 hover:bg-purple-50 text-purple-400 text-2xl flex items-center justify-center transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-12 h-12 rounded-lg border-2 border-purple-200 hover:border-purple-400 hover:bg-purple-50 text-purple-400 text-2xl flex items-center justify-center transition-colors"
                   aria-label="Decrease quantity"
                   disabled={isLoading}
                 >
@@ -101,13 +94,13 @@ export default function ActivityKit() {
                   type="number"
                   value={quantity}
                   onChange={handleChange}
-                  className="w-24 h-12 text-center text-xl text-black font-semibold border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-400 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-24 h-12 text-center text-black text-xl font-semibold border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-400"
                   min="1"
                   disabled={isLoading}
                 />
                 <button
                   onClick={handleIncrement}
-                  className="w-12 h-12 rounded-lg border-2 border-purple-200 hover:border-purple-400 hover:bg-purple-50 text-purple-400 text-2xl flex items-center justify-center transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-12 h-12 rounded-lg border-2 border-purple-200 hover:border-purple-400 hover:bg-purple-50 text-purple-400 text-2xl flex items-center justify-center transition-colors"
                   aria-label="Increase quantity"
                   disabled={isLoading}
                 >
@@ -145,7 +138,7 @@ export default function ActivityKit() {
                 placeholder="Enter your email address here"
                 className={`w-full px-6 py-4 rounded-full border-2 ${
                   errors.email ? 'border-red-400' : 'border-purple-200'
-                } focus:outline-none focus:border-purple-400 text-gray-700 placeholder-gray-300 disabled:opacity-50 disabled:cursor-not-allowed`}
+                } focus:outline-none focus:border-purple-400 text-gray-700 placeholder-gray-300`}
                 disabled={isLoading}
               />
               {errors.email && (

@@ -109,7 +109,7 @@ export default function EventsAndCollaborators() {
             {events.map((event, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-3xl transition-shadow"
+                className="bg-white rounded-3xl transition-shadow px-4 py-2"
               >
                 <div className="flex gap-6">
                   {/* Date Box */}

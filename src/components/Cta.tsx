@@ -78,7 +78,7 @@ export default function ReadyToJoinCTA() {
 
             {/* Content */}
             <div className="relative z-10 px-8 py-24 md:px-16 md:py-32 text-center">
-              <p className="text-white text-2xl md:text-3xl lg:text-4xl leading-relaxed font-light mb-12 max-w-3xl mx-auto">
+              <p className="text-white text-2xl md:text-3xl leading-relaxed font-light mb-12 max-w-3xl mx-auto">
                 Your gift and participation creates play sessions, emotional support, and hope for children facing illness
               </p>
 

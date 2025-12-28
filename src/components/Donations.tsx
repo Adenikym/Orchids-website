@@ -134,7 +134,7 @@ export default function Donations() {
 
             {/* Content */}
             <div className="relative z-10 max-w-4xl mx-auto text-center">
-              <p className="text-white text-2xl md:text-3xl lg:text-4xl leading-relaxed font-light mb-8">
+              <p className="text-white text-2xl md:text-3xl  leading-relaxed font-bold mb-8">
                 Each naira you give turns into crayons, toys, smiles, and hope. Join us in creating a world where every child can heal through play- Etore Efiom-Ekaha
               </p>
 

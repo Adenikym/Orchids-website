@@ -40,9 +40,9 @@ export default function Footer() {
     <footer className="bg-[#2d1b3d] text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-8 py-16 md:px-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center md:text-left">
           {/* Logo Section */}
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-center md:items-start">
             <div className="relative w-40 h-20 mb-4">
               <Image
                 height={45}
@@ -121,7 +121,7 @@ export default function Footer() {
                 onChange={(e) => setEmail(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && handleSubscribe()}
                 placeholder="Enter your email"
-                className="flex-1 px-6 py-3 rounded-l-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-400"
+                className="flex-1 px-6 py-3 rounded-l-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-400 bg-white"
               />
               <button
                 onClick={handleSubscribe}

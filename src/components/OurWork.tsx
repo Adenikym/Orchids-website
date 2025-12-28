@@ -7,9 +7,15 @@ export default function OurWork() {
   return (
     <section  className="py-16 px-6 bg-[#f8f2fc]">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center mb-8">
-          <h2 className="text-purple-600 font-semibold tracking-widest mr-4">OUR WORK</h2>
-          <div className="flex-1 h-px bg-gradient-to-r from-purple-200 to-transparent" />
+        <div className="flex flex-col  mb-8 w-fit">
+          <h2 className="text-[#D186FF] font-bold text-base md:text-3xl text-center tracking-widest mr-4">OUR WORK</h2>
+           <svg className='hidden md:block' width="224" height="24" viewBox="0 0 224 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-0.000130653 11.547L11.5469 23.094L23.0939 11.547L11.5469 -8.58307e-06L-0.000130653 11.547ZM223.094 11.547L211.547 -8.58307e-06L200 11.547L211.547 23.094L223.094 11.547ZM11.5469 11.547V13.547H211.547V11.547V9.547H11.5469V11.547Z" fill="#D186FF"/>
+</svg>
+<svg className='block md:hidden' width="92" height="12" viewBox="0 0 92 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-6.53267e-05 5.77344L5.77344 11.5469L11.5469 5.77344L5.77344 -6.53267e-05L-6.53267e-05 5.77344ZM91.5469 5.77344L85.7734 -6.53267e-05L79.9999 5.77344L85.7734 11.5469L91.5469 5.77344ZM5.77344 5.77344V6.77344H85.7734V5.77344V4.77344H5.77344V5.77344Z" fill="#D186FF"/>
+</svg>
+        
         </div>
 
         <div className="grid gap-8 grid-cols-1 md:grid-cols-3">

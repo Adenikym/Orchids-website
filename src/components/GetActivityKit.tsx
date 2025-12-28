@@ -80,7 +80,7 @@ export default function ImpactStories() {
         </div>
 
         {/* Main Content */}
-<div className="min-h-screen  flex items-center justify-center p-8">
+<div className="min-h-screen  flex items-center justify-center p-0 md:p-8">
       <div className="max-w-6xl w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Grid */}
@@ -139,7 +139,7 @@ export default function ImpactStories() {
           </div>
 
           {/* Quote Section */}
-          <div className="relative">
+          <div className="relative shadow-lg px-6 py-6 rounded-3xl">
             <div className="absolute -right-12 top-8 w-24 h-24 text-yellow-400 opacity-20">
               <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
                 <line x1="50" y1="0" x2="50" y2="30"/>
@@ -161,7 +161,7 @@ export default function ImpactStories() {
 
             {/* Author Info */}
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-20 h-20 rounded-full overflow-hidden bg-gray-300 border-4 border-white shadow-lg relative">
+              <div className="w-20 h-20 rounded-full overflow-hidden shadow-lg bg-gray-300 border-4 border-white relative">
                 <img 
                   height="102"
                   width="102"

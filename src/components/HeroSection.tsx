@@ -22,7 +22,7 @@ export default function HeroSection() {
           Through Arts, Crafts, Music and STEM activities,<br/> we bring hope and healing to pediatric patients.
           </p>
                     {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-3 mt-3">
+          <div className="flex items-center justify-center md:justify-start space-x-3 mt-3">
             <a
               href="/donate"
               className="px-6 py-2.5 bg-gradient-to-r from-purple-400 to-purple-500 text-white rounded-full hover:from-purple-500 hover:to-purple-600 transition-all duration-200 text-sm font-medium shadow-md hover:shadow-lg"

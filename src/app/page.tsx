@@ -11,6 +11,7 @@ import Donations from "@/components/Donations";
 import EventsAndCollaborators from "@/components/EventsandCollaborations";
 import Cta from "@/components/Cta";
 import FAQSection from "@/components/Faq";
+import ActivityKit from '@/components/ActivityKit';
 import Footer from "@/components/Footer";
 
 
@@ -128,6 +129,7 @@ export default function Home() {
 
   {/* Our Work Section (from Figma design) */}
   <OurWork />
+  <ActivityKit/>
   <GetActivityKit />
   <Donations />
   <EventsAndCollaborators />
