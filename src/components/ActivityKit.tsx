@@ -35,7 +35,7 @@ export default function ActivityKit() {
 
     try {
       const paymentData = {
-        activityKitId: 'e1b868ff-e7ba-4eb1-9cba-ba79d9f05dca',
+        activityKitId: 'f2b3360b-5c26-4c7f-8ed6-83aca62edacf',
         email,
         type: 'activity_kit',
         amount: quantity * unitPrice,
