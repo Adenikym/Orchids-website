@@ -9,7 +9,7 @@ export default function AboutHero() {
       <div className="absolute top-10 left-10 w-12 h-12 text-purple-400 opacity-60">
         <Sparkles className="w-full h-full" />
       </div>
-      <div className="absolute top-20 right-20 w-16 h-16 text-yellow-400 opacity-60">
+      <div className="absolute top-20 right-20 w-16 h-16 text-[#FFEB3B] opacity-60">
         <Star className="w-full h-full" />
       </div>
       <div className="absolute bottom-32 left-20 w-10 h-10 text-purple-300 opacity-60">
@@ -46,7 +46,7 @@ export default function AboutHero() {
             <div className="space-y-6 order-2 md:order-1">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
                 We are Transforming Lives Through{' '}
-                <span className="text-yellow-400">Therapeutic</span> Play
+                <span className="text-[#FFEB3B]">Therapeutic</span> Play
               </h2>
               
               <p className="text-gray-600 text-lg leading-relaxed">
@@ -60,7 +60,7 @@ export default function AboutHero() {
                 </div>
                 <div className="flex items-center gap-2 bg-yellow-100 px-4 py-2 rounded-full">
                   <Sparkles className="w-5 h-5 text-yellow-600" />
-                  <span className="text-yellow-600 font-semibold">UCH Nigeria</span>
+                  <span className="text-yellow-600 font-semibold">Nigeria</span>
                 </div>
                 <div className="flex items-center gap-2 bg-purple-100 px-4 py-2 rounded-full">
                   <Star className="w-5 h-5 text-purple-600" />
@@ -124,18 +124,18 @@ export default function AboutHero() {
 
           {/* Decorative Stars */}
           <div className="flex justify-center gap-8 mt-12 opacity-40">
-            <Sparkles className="w-6 h-6 text-yellow-400" />
+            <Sparkles className="w-6 h-6 text-[#FFEB3B]" />
             <Star className="w-8 h-8 text-purple-400" />
-            <Sparkles className="w-6 h-6 text-yellow-400" />
+            <Sparkles className="w-6 h-6 text-[#FFEB3B]" />
           </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 mt-16 relative">
             {/* Decorative star */}
-            <div className="absolute -left-8 top-1/2 -translate-y-1/2 w-12 h-12 text-yellow-400 opacity-60 hidden lg:block">
+            <div className="absolute -left-8 top-1/2 -translate-y-1/2 w-12 h-12 text-[#FFEB3B] opacity-60 hidden lg:block">
               <Star className="w-full h-full" />
             </div>
-            <div className="absolute -right-8 top-1/2 -translate-y-1/2 w-12 h-12 text-yellow-400 opacity-60 hidden lg:block">
+            <div className="absolute -right-8 top-1/2 -translate-y-1/2 w-12 h-12 text-[#FFEB3B] opacity-60 hidden lg:block">
               <Star className="w-full h-full" />
             </div>
 
@@ -164,9 +164,9 @@ export default function AboutHero() {
 
           {/* Decorative Stars */}
           <div className="flex justify-center gap-8 mt-12 opacity-40">
-            <Sparkles className="w-6 h-6 text-yellow-400" />
+            <Sparkles className="w-6 h-6 text-[#FFEB3B]" />
             <Star className="w-8 h-8 text-purple-400" />
-            <Sparkles className="w-6 h-6 text-yellow-400" />
+            <Sparkles className="w-6 h-6 text-[#FFEB3B]" />
           </div>
        
       </div>

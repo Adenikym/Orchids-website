@@ -5,6 +5,8 @@ import Navbar from "../../components/Navbar";
 import Footer from "@/components/Footer";
 import DonationDetails from "../../components/DonationDetails";
 import DonationHero from "../../components/DonationHero";
+import GetActivityKit from '@/components/GetActivityKit';
+import Donations from "@/components/Donations";
 
 export default function Donation() {
   const [formData, setFormData] = useState({
@@ -58,6 +60,10 @@ console.log(responseMessage)
 <DonationHero/>
 <DonationDetails/>
       </main>
+
+      <Donations/>
+
+       <GetActivityKit />
 
       {/* Footer */}
      <Footer/>

@@ -1,14 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function AboutUsSection() {
   return (
     <section className="relative bg-gradient-to-br from-purple-50 via-white to-purple-50 py-20 lg:py-32 overflow-hidden">
       {/* Decorative Elements */}
      <svg className="absolute top-24 right-[180px] hidden md:block" width="78" height="77" viewBox="0 0 78 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M62.2776 5.77051L31.4702 50.9359" stroke="#F1D900" stroke-width="3" stroke-linecap="round"/>
-<path d="M21.1584 11.2422L26.8702 49.7698" stroke="#F1D900" stroke-width="3" stroke-linecap="round"/>
-<path d="M71.5432 38.3057L36.4433 55.1875" stroke="#F1D900" stroke-width="3" stroke-linecap="round"/>
+<path d="M62.2776 5.77051L31.4702 50.9359" stroke="#FFEB3B" stroke-width="3" stroke-linecap="round"/>
+<path d="M21.1584 11.2422L26.8702 49.7698" stroke="#FFEB3B" stroke-width="3" stroke-linecap="round"/>
+<path d="M71.5432 38.3057L36.4433 55.1875" stroke="#FFEB3B" stroke-width="3" stroke-linecap="round"/>
 </svg>
 
       <div className="absolute bottom-0 left-2 opacity-50 hidden md::block">
@@ -69,9 +70,9 @@ export default function AboutUsSection() {
           {/* Left Content */}
           <div className="space-y-2 md:space-y-4 relative lg:flex-1">
             <svg className='hidden md:block relative right-12 top-10' width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.5 1.50024L42.5 43.5002" stroke="#F1D900" stroke-width="3" stroke-linecap="round"/>
-<path d="M1.5 42.5452L40.1187 47.6045" stroke="#F1D900" stroke-width="3" stroke-linecap="round"/>
-<path d="M41.3291 1.50024L47.9514 39.8818" stroke="#F1D900" stroke-width="3" stroke-linecap="round"/>
+<path d="M7.5 1.50024L42.5 43.5002" stroke="#FFEB3B" stroke-width="3" stroke-linecap="round"/>
+<path d="M1.5 42.5452L40.1187 47.6045" stroke="#FFEB3B" stroke-width="3" stroke-linecap="round"/>
+<path d="M41.3291 1.50024L47.9514 39.8818" stroke="#FFEB3B" stroke-width="3" stroke-linecap="round"/>
 </svg>
 
            
@@ -80,7 +81,7 @@ export default function AboutUsSection() {
               <h3 className="text-base lg:text-3xl font-bold text-gray-800 mb-0 md:mb-2">
                 Transforming Lives Through
               </h3>
-              <h3 className="text-base lg:text-3xl font-bold text-yellow-400 ml-1 md:ml-0">
+              <h3 className="text-base lg:text-3xl font-bold text-[#FFEB3B] ml-1 md:ml-0">
                 Therapeutic <span className="text-gray-800">Play</span>
               </h3>
             </div>
@@ -90,8 +91,8 @@ export default function AboutUsSection() {
             </p>
 
             <div className="flex justify-center md:justify-start">
-              <a 
-                href="#" 
+              <Link
+                href="/about" 
                 className="inline-flex items-center gap-2 text-purple-400 text-xs md:text-lg font-medium hover:text-purple-500 transition-colors group"
               >
                 <span className="border-b-2 border-purple-400 group-hover:border-purple-500">See More</span>
@@ -113,7 +114,7 @@ export default function AboutUsSection() {
 <path d="M10.7885 8.6671H3.33854C3.14966 8.6671 2.99143 8.6031 2.86388 8.4751C2.73632 8.3471 2.67232 8.18888 2.67188 8.00043C2.67143 7.81199 2.73543 7.65377 2.86388 7.52577C2.99232 7.39777 3.15054 7.33377 3.33854 7.33377H10.7885L7.52188 4.0671C7.38854 3.93376 7.32454 3.77821 7.32988 3.60043C7.33521 3.42265 7.40477 3.2671 7.53854 3.13376C7.67188 3.01154 7.82743 2.94754 8.00521 2.94177C8.18299 2.93599 8.33854 2.99999 8.47188 3.13376L12.8719 7.53377C12.9385 7.60043 12.9859 7.67265 13.0139 7.75043C13.0419 7.82821 13.0557 7.91154 13.0552 8.00043C13.0548 8.08932 13.041 8.17265 13.0139 8.25043C12.9868 8.32821 12.9394 8.40043 12.8719 8.4671L8.47188 12.8671C8.34966 12.9893 8.19699 13.0504 8.01388 13.0504C7.83077 13.0504 7.67232 12.9893 7.53854 12.8671C7.40521 12.7338 7.33854 12.5755 7.33854 12.3924C7.33854 12.2093 7.40521 12.0509 7.53854 11.9171L10.7885 8.6671Z" fill="#AE70D5"/>
 </svg>
 
-              </a>
+              </Link>
             </div>
           </div>
 

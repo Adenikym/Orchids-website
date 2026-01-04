@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
 interface ContactFormData {
-  firstName: string;
-  lastName: string;
+  organizationName: string;
+  websiteLink: string;
   email: string;
   message: string;
 }
 
 export default function ContactUsContent() {
   const [formData, setFormData] = useState<ContactFormData>({
-    firstName: '',
-    lastName: '',
+    organizationName: '',
+    websiteLink: '',
     email: '',
     message: ''
   });
@@ -31,41 +31,42 @@ export default function ContactUsContent() {
       {/* Contact Form */}
       <div className="space-y-6">
         <div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Become a member</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Partner with Us</h2>
           <p className="text-gray-600 text-base">
-            Your gift and participation creates play sessions, emotional support, and hope for children facing illness
+            Your collaboration and support creates play sessions, emotional support, and hope for children facing illness
           </p>
         </div>
 
         <div className="space-y-6">
-          {/* First Name and Last Name */}
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
-                First Name
-              </label>
-              <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border-b-2 border-gray-300 focus:border-purple-400 focus:outline-none bg-transparent transition-colors"
-              />
-            </div>
-            <div className="space-y-2">
-              <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
-                Last Name
-              </label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border-b-2 border-gray-300 focus:border-purple-400 focus:outline-none bg-transparent transition-colors"
-              />
-            </div>
+          {/* Organization Name */}
+          <div className="space-y-2">
+            <label htmlFor="organizationName" className="block text-sm font-medium text-gray-700">
+              Organization Name
+            </label>
+            <input
+              type="text"
+              id="organizationName"
+              name="organizationName"
+              value={formData.organizationName}
+              onChange={handleChange}
+              className="w-full text-gray-700 px-4 py-3 border-b-2  border-gray-300 focus:border-purple-400 focus:outline-none bg-transparent transition-colors"
+            />
+          </div>
+
+          {/* Website Link */}
+          <div className="space-y-2">
+            <label htmlFor="websiteLink" className="block text-sm font-medium text-gray-700">
+              Website Link
+            </label>
+            <input
+              type="url"
+              id="websiteLink"
+              name="websiteLink"
+              value={formData.websiteLink}
+              onChange={handleChange}
+              placeholder="https://example.com"
+              className="w-full text-gray-700 px-4 py-3 border-b-2 border-gray-300 focus:border-purple-400 focus:outline-none bg-transparent transition-colors"
+            />
           </div>
 
           {/* Email */}
@@ -79,7 +80,7 @@ export default function ContactUsContent() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 border-b-2 border-gray-300 focus:border-purple-400 focus:outline-none bg-transparent transition-colors"
+              className="w-full px-4 py-3 text-gray-700 border-b-2 border-gray-300 focus:border-purple-400 focus:outline-none bg-transparent transition-colors"
             />
           </div>
 
@@ -94,8 +95,8 @@ export default function ContactUsContent() {
               value={formData.message}
               onChange={handleChange}
               rows={5}
-              placeholder="Share your thoughts or enquiry"
-              className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-purple-400 focus:outline-none resize-none placeholder-gray-400"
+              placeholder="Tell us about your organization and collaboration ideas"
+              className="w-full text-gray-700 px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-purple-400 focus:outline-none resize-none placeholder-gray-400"
             />
           </div>
 

@@ -1,7 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import ContactUsContent from './ContactUsContent';
 
-export default function ReadyToJoinCTA() {
+interface openVolunteerModalProps {
+  onOpenVolunteer: () => void;
+}
+
+export default function ReadyToJoinCTA({ onOpenVolunteer }: openVolunteerModalProps) {
   return (
     <div className="min-h-screen bg-gray-50 py-16 px-8 md:px-16 relative overflow-hidden">
       {/* Decorative Background Elements */}
@@ -42,7 +48,7 @@ export default function ReadyToJoinCTA() {
             <div className="w-3 h-3 bg-purple-400 rotate-45"></div>
           </div>
 
-          <div className="absolute -right-8 -top-8 w-16 h-16 text-yellow-400">
+          <div className="absolute -right-8 -top-8 w-16 h-16 text-[#FFEB3B]">
             <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3">
               <line x1="50" y1="10" x2="50" y2="40"/>
               <line x1="50" y1="10" x2="70" y2="30"/>
@@ -50,7 +56,7 @@ export default function ReadyToJoinCTA() {
             </svg>
           </div>
 
-          <div className="absolute -left-12 top-20 w-12 h-12 text-yellow-400">
+          <div className="absolute -left-12 top-20 w-12 h-12 text-[#FFEB3B]">
             <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3">
               <line x1="20" y1="50" x2="50" y2="50"/>
               <line x1="20" y1="30" x2="40" y2="50"/>
@@ -84,10 +90,13 @@ export default function ReadyToJoinCTA() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link href="/donation">
                 <button className="px-10 py-4 bg-purple-500 hover:bg-purple-600 text-white rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg min-w-[160px]">
                   Donate
                 </button>
-                <button className="px-10 py-4 bg-white hover:bg-gray-100 text-gray-800 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg min-w-[160px]">
+                </Link>
+               
+                <button onClick={onOpenVolunteer} className="px-10 py-4 bg-white hover:bg-gray-100 text-gray-800 rounded-full text-lg font-semibold transition-all hover:scale-105 shadow-lg min-w-[160px]">
                   Volunteer
                 </button>
               </div>
@@ -95,7 +104,7 @@ export default function ReadyToJoinCTA() {
           </div>
 
           {/* Decorative sun element at bottom right */}
-          <div className="absolute -bottom-8 -right-8 w-24 h-24 text-yellow-400">
+          <div className="absolute -bottom-8 -right-8 w-24 h-24 text-[#FFEB3B]">
             <svg viewBox="0 0 100 100" fill="currentColor">
               <circle cx="50" cy="50" r="12"/>
               <line x1="50" y1="15" x2="50" y2="25" stroke="currentColor" strokeWidth="3"/>

@@ -9,13 +9,13 @@ export default function OurHistory() {
       <div className="absolute top-10 left-10 w-10 h-10 text-purple-400 opacity-40">
         <Sparkles className="w-full h-full" />
       </div>
-      <div className="absolute top-20 right-16 w-12 h-12 text-yellow-400 opacity-50">
+      <div className="absolute top-20 right-16 w-12 h-12 text-[#FFEB3B] opacity-50">
         <Star className="w-full h-full" />
       </div>
-      <div className="absolute bottom-20 left-16 w-10 h-10 text-yellow-400 opacity-40">
+      <div className="absolute bottom-20 left-16 w-10 h-10 text-[#FFEB3B] opacity-40">
         <Sparkles className="w-full h-full" />
       </div>
-      <div className="absolute bottom-32 right-20 w-12 h-12 text-yellow-400 opacity-50">
+      <div className="absolute bottom-32 right-20 w-12 h-12 text-[#FFEB3B] opacity-50">
         <Star className="w-full h-full" />
       </div>
 
@@ -77,7 +77,7 @@ export default function OurHistory() {
 
           {/* Text Content */}
           <div className="space-y-6 relative">
-            <div className="absolute -left-6 top-0 w-12 h-12 text-yellow-400 opacity-60">
+            <div className="absolute -left-6 top-0 w-12 h-12 text-[#FFEB3B] opacity-60">
               <Star className="w-full h-full" />
             </div>
             <p className="text-gray-700 text-lg leading-relaxed pl-8">
@@ -90,14 +90,14 @@ export default function OurHistory() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Content - First on mobile, second on desktop */}
           <div className="space-y-6 order-2 md:order-1 relative">
-            <div className="absolute -left-6 top-0 w-12 h-12 text-yellow-400 opacity-60">
+            <div className="absolute -left-6 top-0 w-12 h-12 text-[#FFEB3B] opacity-60">
               <Sparkles className="w-full h-full" />
             </div>
             <p className="text-gray-700 text-lg leading-relaxed pl-8">
               What started as one act of kindness has grown into a vibrant volunteer-driven initiative. By December 2022, Etore and her peers began engaging young patients with creative activities that ease pain, foster resilience, and brighten their hospital experience.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed pl-8">
-              In 2023, Orchids was officially incorporated under Section 26 of the Companies Allied Matters Act (CAMA). Today, it continues to transform hospital stays into moments of connection, creativity, and healing—fulfilling its mission to share smiles in spite of suffering.
+              In 2023, Orchids was officially incorporated under Section 26 of the Companies Allied Matters Act (CAMA). Today, it continues to transform hospital stays into moments of connection, creativity, and healing fulfilling its mission to share smiles in spite of suffering.
             </p>
           </div>
 
@@ -121,9 +121,9 @@ export default function OurHistory() {
 
         {/* Decorative Bottom Element */}
         <div className="flex justify-center gap-6 mt-16 opacity-40">
-          <Sparkles className="w-6 h-6 text-yellow-400 animate-pulse" />
+          <Sparkles className="w-6 h-6 text-[#FFEB3B] animate-pulse" />
           <Star className="w-8 h-8 text-purple-400 animate-pulse" style={{ animationDelay: '0.3s' }} />
-          <Sparkles className="w-6 h-6 text-yellow-400 animate-pulse" style={{ animationDelay: '0.6s' }} />
+          <Sparkles className="w-6 h-6 text-[#FFEB3B] animate-pulse" style={{ animationDelay: '0.6s' }} />
         </div>
       </div>
 

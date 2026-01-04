@@ -47,7 +47,7 @@ export default function OurTeam() {
       <div className="absolute top-10 left-10 w-10 h-10 text-purple-400 opacity-40">
         <Sparkles className="w-full h-full" />
       </div>
-      <div className="absolute top-20 left-32 w-12 h-12 text-yellow-400 opacity-50">
+      <div className="absolute top-20 left-32 w-12 h-12 text-[#FFEB3B] opacity-50">
         <Star className="w-full h-full" />
       </div>
 
@@ -66,7 +66,7 @@ export default function OurTeam() {
       </div>
 
       {/* Bottom decorative stars */}
-      <div className="absolute bottom-20 left-20 w-10 h-10 text-yellow-400 opacity-40">
+      <div className="absolute bottom-20 left-20 w-10 h-10 text-[#FFEB3B] opacity-40">
         <Sparkles className="w-full h-full" />
       </div>
       <div className="absolute bottom-32 right-24 w-12 h-12 text-purple-400 opacity-50">
@@ -126,9 +126,9 @@ export default function OurTeam() {
 
         {/* Decorative Bottom Element */}
         <div className="flex justify-center gap-6 mt-16 opacity-40">
-          <Sparkles className="w-6 h-6 text-yellow-400 animate-pulse" />
+          <Sparkles className="w-6 h-6 text-[#FFEB3B] animate-pulse" />
           <Star className="w-8 h-8 text-purple-400 animate-pulse" style={{ animationDelay: '0.3s' }} />
-          <Sparkles className="w-6 h-6 text-yellow-400 animate-pulse" style={{ animationDelay: '0.6s' }} />
+          <Sparkles className="w-6 h-6 text-[#FFEB3B] animate-pulse" style={{ animationDelay: '0.6s' }} />
         </div>
       </div>
 

@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         quicksand: ['var(--font-quicksand)'],
       },
+      colors: {
+         brandyellow: '#FFEB3B',
+      },
     },
   },
   plugins: [],

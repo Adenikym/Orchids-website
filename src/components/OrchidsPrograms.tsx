@@ -11,6 +11,10 @@ interface ProgramSectionProps {
   imageSrc: string;
   imageAlt: string;
   imagePosition?: 'left' | 'right';
+  buttonAction?: ()=>void;
+  openCollabModal?: () => void;
+  openVolunteerModal?: () => void;
+  openDonationModal?: () => void;
 }
 
 interface Program {
@@ -22,6 +26,7 @@ interface Program {
   imageSrc: string;
   imageAlt: string;
   imagePosition: 'left' | 'right';
+  buttonAction?: ()=>void;
 }
 
 // Reusable Program Section Component
@@ -33,7 +38,12 @@ const ProgramSection: FC<ProgramSectionProps> = ({
   buttonText, 
   imageSrc, 
   imageAlt,
-  imagePosition = 'left'
+  imagePosition = 'left',
+  openCollabModal,
+  openVolunteerModal,
+  openDonationModal,
+   buttonAction
+
 }) => {
   return (
     <div className="relative py-16 px-6">
@@ -78,7 +88,12 @@ const ProgramSection: FC<ProgramSectionProps> = ({
             </p>
 
             {/* CTA Button */}
-            <button className="bg-white border-2 border-purple-200 text-purple-500 px-8 py-3 rounded-full font-semibold hover:bg-purple-50 hover:border-purple-400 transition-all duration-300 shadow-sm hover:shadow-md">
+            <button onClick={() => {
+    console.log('Button clicked!', buttonAction);
+    if (buttonAction) {
+      buttonAction();
+    }
+  }} className="bg-white border-2 border-purple-200 text-purple-500 px-8 py-3 rounded-full font-semibold hover:bg-purple-50 hover:border-purple-400 transition-all duration-300 shadow-sm hover:shadow-md">
               {buttonText}
             </button>
 
@@ -101,17 +116,23 @@ const ProgramSection: FC<ProgramSectionProps> = ({
 };
 
 // Main Component with all three sections
-const ProgramSections: FC = () => {
+const ProgramSections: FC<{
+  openDonationModal?: () => void;
+  openVolunteerModal?: () => void;
+  openCollabModal?: () => void;
+  
+}> = ({ openDonationModal, openVolunteerModal, openCollabModal}) => {
   const programs: Program[] = [
     {
       badge: "MONTHLY WARD VISITS",
       title: "We are Turning hospital wards into happy spaces.",
       highlightWord: "happy",
-      description: "Every month, our volunteers visit pediatric wards with art materials, musical instruments, and STEM-based games. These sessions help children express themselves, ease anxiety, and rediscover the joy of being kids again—even while receiving treatment.",
+      description: "Every month, our volunteers visit pediatric wards with art materials, musical instruments, and STEM-based games. These sessions help children express themselves, ease anxiety, and rediscover the joy of being kids again even while receiving treatment.",
       buttonText: "Donate Now",
       imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1762952096/tori-bubbles_wm4b2x.png",
       imageAlt: "Volunteer with children during ward visit",
-      imagePosition: "left"
+      imagePosition: "left",
+      buttonAction: openDonationModal
     },
     {
       badge: "ORCHIDSAID",
@@ -121,7 +142,8 @@ const ProgramSections: FC = () => {
       buttonText: "Donate Now",
       imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1765116194/Rectangle_14_3_hzb0lc.png",
       imageAlt: "Happy family receiving support",
-      imagePosition: "right"
+      imagePosition: "right",
+      buttonAction: openDonationModal
     },
     {
       badge: "COMMUNITY PARTNERSHIPS",
@@ -131,17 +153,19 @@ const ProgramSections: FC = () => {
       buttonText: "Partner with us",
       imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1765116191/Rectangle_14_4_at23db.png",
       imageAlt: "Community partnership volunteers",
-      imagePosition: "left"
+      imagePosition: "left",
+      buttonAction: openCollabModal
     },
         {
       badge: "VOLUNTEER DEVELOPMENT",
       title: "WWe are Empowering young hearts to serve",
       highlightWord: "empowering",
-      description: "Our volunteers are the heart of Orchids. We train them in therapeutic play, child psychology, and creative facilitation—equipping them to provide compassionate, high-quality emotional support to every child they meet.",
+      description: "Our volunteers are the heart of Orchids. We train them in therapeutic play, child psychology, and creative facilitation equipping them to provide compassionate, high-quality emotional support to every child they meet.",
       buttonText: "Volunteer Now",
       imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1765116191/Rectangle_14_5_gqvyrn.png",
       imageAlt: "Community partnership volunteers",
-      imagePosition: "right"
+      imagePosition: "right",
+      buttonAction: openVolunteerModal
     }
   ];
 
@@ -158,6 +182,7 @@ const ProgramSections: FC = () => {
           imageSrc={program.imageSrc}
           imageAlt={program.imageAlt}
           imagePosition={program.imagePosition}
+           buttonAction={program.buttonAction}
         />
       ))}
     </div>

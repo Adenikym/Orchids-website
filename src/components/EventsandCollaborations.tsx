@@ -1,7 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Image from 'next/image';
+import CollaborationContent from './CollaborateContent';
+import {Modal} from './ReusableModal';
 
 export default function EventsAndCollaborators() {
+  const [isCollabOpen, setIsCollabOpen] = useState(false);
   const events = [
     {
       date: "01",
@@ -39,7 +42,7 @@ export default function EventsAndCollaborators() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-8 md:px-16 relative overflow-hidden">
+    <div id="events" className="min-h-screen bg-gray-50 py-16 px-8 md:px-16 relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-10 right-32 w-32 h-32 opacity-10">
         <svg viewBox="0 0 100 100" className="text-purple-300">
@@ -87,7 +90,7 @@ export default function EventsAndCollaborators() {
               <div className="w-3 h-3 bg-purple-400 rotate-45"></div>
             </div>
 
-            <div className="absolute -right-8 -top-8 w-16 h-16 text-yellow-400">
+            <div className="absolute -right-8 -top-8 w-16 h-16 text-[#FFEB3B]">
               <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3">
                 <line x1="50" y1="10" x2="50" y2="40"/>
                 <line x1="50" y1="10" x2="70" y2="30"/>
@@ -95,7 +98,7 @@ export default function EventsAndCollaborators() {
               </svg>
             </div>
 
-            <div className="absolute -left-12 top-20 w-12 h-12 text-yellow-400">
+            <div className="absolute -left-12 top-20 w-12 h-12 text-[#FFEB3B]">
               <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3">
                 <line x1="20" y1="50" x2="50" y2="50"/>
                 <line x1="20" y1="30" x2="40" y2="50"/>
@@ -158,7 +161,7 @@ export default function EventsAndCollaborators() {
               <div className="w-3 h-3 bg-purple-400 rotate-45"></div>
             </div>
 
-            <div className="absolute -right-8 -top-8 w-16 h-16 text-yellow-400">
+            <div className="absolute -right-8 -top-8 w-16 h-16 text-[#FFEB3B]">
               <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3">
                 <line x1="50" y1="10" x2="50" y2="40"/>
                 <line x1="50" y1="10" x2="70" y2="30"/>
@@ -166,7 +169,7 @@ export default function EventsAndCollaborators() {
               </svg>
             </div>
 
-            <div className="absolute -left-12 top-20 w-12 h-12 text-yellow-400">
+            <div className="absolute -left-12 top-20 w-12 h-12 text-[#FFEB3B]">
               <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3">
                 <line x1="20" y1="50" x2="50" y2="50"/>
                 <line x1="20" y1="30" x2="40" y2="50"/>
@@ -202,12 +205,15 @@ Our collaborators share our heart for children, joining us to bring color, comfo
 
           {/* Collaborate Button */}
           <div className="flex justify-center">
-            <button className="px-12 py-4 border-2 border-purple-400 text-purple-400 rounded-full text-lg font-semibold hover:bg-purple-400 hover:text-white transition-all">
+            <button onClick={() => setIsCollabOpen(true)} className="px-12 py-4 border-2 border-purple-400 text-purple-400 rounded-full text-lg font-semibold hover:bg-purple-400 hover:text-white transition-all">
               Collaborate with us
             </button>
           </div>
         </section>
       </div>
+      <Modal isOpen={isCollabOpen} onClose={() => setIsCollabOpen(false)} maxWidth="xl">
+        <CollaborationContent />
+      </Modal>
     </div>
   );
 }

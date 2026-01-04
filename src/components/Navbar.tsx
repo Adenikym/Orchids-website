@@ -1,24 +1,22 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link'; // Add this import
 import { Menu, X } from 'lucide-react';
 import { Modal } from '../components/ReusableModal';
 import ContactUsContent from './ContactUsContent';
 
-
-
- const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Our Work', href: '/work' },
-    { name: 'Donation', href: '/donation' },
-    // { name: 'Gallery', href: '/gallery' },
-    { name: 'Contact us', href: '/contact' }
-  ];
+const navLinks = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Our Work', href: '/work' },
+  { name: 'Donation', href: '/donation' },
+  { name: 'Contact us', href: '/contact' }
+];
 
 export default function Navbar() {
-      const [isMenuOpen, setIsMenuOpen] = useState(false);
-      const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-white shadow-sm">
@@ -31,7 +29,6 @@ export default function Navbar() {
               width="143"
               src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762978493/orchids-purple-logo_qmdft7.png"
               alt="Orchids Initiative Logo"
-              
               className="object-contain"
             />
           </div>
@@ -39,24 +36,24 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className="text-gray-700 hover:text-[#D186FF] transition-colors duration-200 text-sm font-medium"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <a
+            <Link
               href="/donation"
               className="px-6 py-2.5 bg-gradient-to-r from-purple-400 to-purple-500 text-white rounded-full hover:from-purple-500 hover:to-purple-600 transition-all duration-200 text-sm font-medium shadow-md hover:shadow-lg"
             >
               Donate
-            </a>
+            </Link>
             <button
               onClick={() => setIsOpen(true)}
               className="px-6 py-2.5 bg-white border-2 border-gray-300 text-gray-700 rounded-full hover:border-purple-400 hover:text-purple-500 transition-all duration-200 text-sm font-medium"
@@ -80,27 +77,52 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-gray-200">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-500 hover:bg-gray-50 transition-colors duration-200"
+        <div className="md:hidden fixed inset-0 z-50 bg-white">
+          <div className="flex flex-col h-full">
+            {/* Close button */}
+            <div className="flex justify-end p-4">
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="p-3 rounded-lg bg-purple-400 text-white hover:bg-purple-500 transition-colors duration-200"
+                aria-label="Close menu"
               >
-                {link.name}
-              </a>
-            ))}
-            <div className="pt-4 space-y-2">
-              <a
+                <X size={24} />
+              </button>
+            </div>
+
+            {/* Menu links */}
+            <div className="flex-1 px-8 pt-8 space-y-6">
+              {navLinks.map((link, index) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`block text-2xl font-normal transition-colors duration-200 ${
+                    index === 0 
+                      ? 'text-purple-400' 
+                      : 'text-gray-700 hover:text-purple-400'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="px-8 pb-8 space-y-3">
+              <Link
                 href="/donation"
-                className="block w-full text-center px-6 py-2.5 bg-gradient-to-r from-purple-400 to-purple-500 text-white rounded-full hover:from-purple-500 hover:to-purple-600 transition-all duration-200 text-sm font-medium"
+                onClick={() => setIsMenuOpen(false)}
+                className="block w-full text-center px-6 py-3 bg-gradient-to-r from-purple-400 to-purple-500 text-white rounded-full hover:from-purple-500 hover:to-purple-600 transition-all duration-200 text-base font-medium"
               >
                 Donate
-              </a>
+              </Link>
               <button
-                onClick={() => setIsOpen(true)}
-                className="block w-full text-center px-6 py-2.5 bg-white border-2 border-gray-300 text-gray-700 rounded-full hover:border-purple-400 hover:text-purple-500 transition-all duration-200 text-sm font-medium"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  setIsOpen(true);
+                }}
+                className="block w-full text-center px-6 py-3 bg-white border-2 border-gray-300 text-gray-700 rounded-full hover:border-purple-400 hover:text-purple-500 transition-all duration-200 text-base font-medium"
               >
                 Volunteer
               </button>

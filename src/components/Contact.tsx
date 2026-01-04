@@ -34,7 +34,7 @@ export default function ContactUs() {
         <div className="mb-12">
           <h1 className="text-5xl font-bold text-purple-400 mb-6">CONTACT US</h1>
           <p className="text-gray-700 text-lg max-w-4xl leading-relaxed">
-            We would love to hear from you! Whether you want to volunteer, partner, donate, or simply learn more about Orchids, our team is here to connect. Reach out today — together, we can make a child&apos;s day brighter
+            We would love to hear from you! Whether you want to volunteer, partner, donate, or simply learn more about Orchids, our team is here to connect. Reach out today. Together, we can make a child&apos;s day brighter
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export default function ContactUs() {
             {/* Prefer a Direct Chat */}
             <div className="relative">
               {/* Decorative Sun Icon */}
-              <div className="absolute -top-4 -right-4 text-yellow-400 text-6xl opacity-70">
+              <div className="absolute -top-4 -right-4 text-[#FFEB3B] text-6xl opacity-70">
                 ☀
               </div>
               
@@ -140,14 +140,14 @@ export default function ContactUs() {
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
                     <Phone className="w-5 h-5 text-purple-400 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">+234 1234 6789 990</span>
+                    <span className="text-gray-700">+234 8102530642</span>
                   </div>
                   
                   <div className="flex items-start gap-4">
                     <Mail className="w-5 h-5 text-purple-400 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">info@orchidspediatric.org</span>
+                    <span className="text-gray-700">orchidsforkids1@gmail.com</span>
                   </div>
-                  
+            
                   <div className="flex items-start gap-4">
                     <Clock className="w-5 h-5 text-purple-400 mt-1 flex-shrink-0" />
                     <span className="text-gray-700">Monday to Friday, 9 AM - 5 PM (WAT)</span>

@@ -62,7 +62,7 @@ export default function ImpactStories() {
             <div className="w-3 h-3 bg-purple-400 rotate-45"></div>
           </div>
 
-          <div className="absolute -right-8 -top-8 w-16 h-16 text-yellow-400">
+          <div className="absolute -right-8 -top-8 w-16 h-16 text-[#FFEB3B]">
             <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3">
               <line x1="50" y1="10" x2="50" y2="40"/>
               <line x1="50" y1="10" x2="70" y2="30"/>
@@ -70,7 +70,7 @@ export default function ImpactStories() {
             </svg>
           </div>
 
-          <div className="absolute -left-12 top-20 w-12 h-12 text-yellow-400">
+          <div className="absolute -left-12 top-20 w-12 h-12 text-[#FFEB3B]">
             <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3">
               <line x1="20" y1="50" x2="50" y2="50"/>
               <line x1="20" y1="30" x2="40" y2="50"/>
@@ -121,7 +121,7 @@ export default function ImpactStories() {
             </div>
 
             {/* Decorative Elements */}
-            <div className="absolute -bottom-8 -right-8 w-20 h-20 text-yellow-400">
+            <div className="absolute -bottom-8 -right-8 w-20 h-20 text-[#FFEB3B]">
               <svg viewBox="0 0 100 100" fill="currentColor">
                 <circle cx="50" cy="50" r="8"/>
                 <circle cx="50" cy="20" r="6"/>
@@ -140,7 +140,7 @@ export default function ImpactStories() {
 
           {/* Quote Section */}
           <div className="relative shadow-lg px-6 py-6 rounded-3xl">
-            <div className="absolute -right-12 top-8 w-24 h-24 text-yellow-400 opacity-20">
+            <div className="absolute -right-12 top-8 w-24 h-24 text-[#FFEB3B] opacity-20">
               <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
                 <line x1="50" y1="0" x2="50" y2="30"/>
                 <line x1="50" y1="0" x2="70" y2="20"/>

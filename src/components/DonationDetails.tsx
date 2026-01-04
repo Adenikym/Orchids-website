@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Type definitions
 interface ProgramSectionProps {
@@ -100,8 +101,8 @@ const ProgramSections: FC = () => {
       badge: "MONTHLY WARD VISITS",
       title: "We are Turning hospital wards into happy spaces.",
       highlightWord: "happy",
-      description: "Every month, our volunteers visit pediatric wards with art materials, musical instruments, and STEM-based games. These sessions help children express themselves, ease anxiety, and rediscover the joy of being kids again—even while receiving treatment.",
-      buttonText: "Donate Now",
+      description: "Every month, our volunteers visit pediatric wards with art materials, musical instruments, and STEM-based games. These sessions help children express themselves, ease anxiety, and rediscover the joy of being kids again even while receiving treatment.",
+      buttonText: "Learn More",
       imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1762952096/tori-bubbles_wm4b2x.png",
       imageAlt: "Volunteer with children during ward visit",
       imagePosition: "right"

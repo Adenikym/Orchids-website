@@ -6,9 +6,21 @@ import Navbar from "../../components/Navbar";
 import WorkHero from "../../components/WorkHero";
 import Footer from "@/components/Footer";
 import OrchidsPrograms from "@/components/OrchidsPrograms";
+import { Modal } from "@/components/ReusableModal";
+import ContactUsContent from "@/components/CollaborateContent";
+import DonationForm from "@/components/DonationContent";
+import CollabContent from "@/components/CollaborateContent";
 
+ 
 
 export default function Contact() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isVolunteerOpen, setIsVolunteerOpen] = useState(false);
+  const [isCollabOpen, setIsCollabOpen] = useState(false);
+  const openDonationModal = () => setIsOpen(true);
+  const openVolunteerModal = () => setIsVolunteerOpen(true);
+  const openCollabModal = () => setIsCollabOpen(true);
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -57,10 +69,24 @@ export default function Contact() {
       {/* Main Content */}
       <main className=" bg-white">
 <WorkHero/>
-<OrchidsPrograms/>
+<OrchidsPrograms openCollabModal={openCollabModal} openDonationModal={openDonationModal} openVolunteerModal={openVolunteerModal} />
       </main>
 
+     
+
       {/* Footer */}
+
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} maxWidth="xl">
+        <DonationForm />
+      </Modal>
+      <Modal isOpen={isVolunteerOpen} onClose={() => setIsVolunteerOpen(false)} maxWidth="xl">
+        <ContactUsContent />
+      </Modal>
+      <Modal isOpen={isCollabOpen} onClose={() => setIsCollabOpen(false)} maxWidth="xl">
+        <CollabContent />
+      </Modal>
+      
+
   <Footer />
     </div>
   );

@@ -59,7 +59,7 @@ export default function ActivityKit() {
       <div className="max-w-7xl mx-auto px-6 py-12">
         <h1 className="text-5xl font-bold text-purple-400 mb-6">OUR WORK</h1>
         <p className="text-gray-700 text-lg max-w-6xl leading-relaxed">
-          At Orchids Pediatric Foundation, we believe that play is medicine. Through our programs, we bring emotional comfort, creativity, and color into the lives of hospitalized children—helping them heal not just physically, but emotionally and mentally too.
+          At Orchids Pediatric Foundation, we believe that play is medicine. Through our programs, we bring emotional comfort, creativity, and color into the lives of hospitalized children, helping them heal not just physically, but emotionally and mentally too.
         </p>
       </div>
 
