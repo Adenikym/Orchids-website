@@ -127,7 +127,14 @@ export default function AboutUsSection() {
                   width="618"
                   src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767626040/Frame_29_1_fm3ob5.svg" 
                   alt="Orchids team members in purple and yellow shirts"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover hidden md:block"
+                />
+                <Image 
+                  height="276"
+                  width="343"
+                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767638150/Frame_29_3_w6jwl5.svg" 
+                  alt="Orchids team members in purple and yellow shirts"
+                  className="block md:hidden w-full h-full object-cover"
                 />
               </div>
             </div>
