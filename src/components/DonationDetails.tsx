@@ -120,7 +120,7 @@ const ProgramSections: FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-50">
+    <div className="min-h-screen bg-[#FAFAFA]">
       {programs.map((program: Program, index: number) => (
         <ProgramSection
           key={index}

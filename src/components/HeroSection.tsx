@@ -6,12 +6,12 @@ interface ChildComponentProps {
 
 export default function HeroSection({ onOpenDonation }: ChildComponentProps) {
   return (
-    <div className=" flex flex-col md:flex-row bg-white p--0 md:p-20  items-center justify-between overflow-hidden">
+    <div className=" flex flex-col md:flex-row bg-gradient-to-b from-[#f9f5fb] to-[#FAFAFA] p-0 md:p-20  items-center justify-between overflow-hidden">
        <Image
                 className='block md:hidden'
-                src="https://res.cloudinary.com/da1snxdv9/image/upload/v1766345121/Group_88_cwevg9.jpg"
+                src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767580759/Group_88_dbowjr.png"
                 alt="Orchids Initiative Logo"
-                width={347}
+                width={370}
                 height={356}
                
                 
@@ -35,7 +35,7 @@ export default function HeroSection({ onOpenDonation }: ChildComponentProps) {
             </button>
             <button
               onClick={onOpenDonation}
-              className="px-6 py-2.5 bg-white border-2 border-gray-300 text-gray-700 rounded-full hover:border-purple-400 hover:text-purple-500 transition-all duration-200 text-sm font-medium"
+              className="px-6 py-2.5 bg-white border hover:border-2 border-[#D186FF] text-[#D186FF] rounded-full hover:border-purple-400 hover:text-purple-500 transition-all duration-200 text-sm font-medium"
             >
               Volunteer
             </button>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function AboutUsSection() {
   return (
-    <section className="relative bg-gradient-to-br from-purple-50 via-white to-purple-50 py-20 lg:py-32 overflow-hidden">
+    <section className="relative bg-[#fafafa] py-20 lg:py-32 overflow-hidden">
       {/* Decorative Elements */}
      <svg className="absolute top-24 right-[180px] hidden md:block" width="78" height="77" viewBox="0 0 78 77" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M62.2776 5.77051L31.4702 50.9359" stroke="#FFEB3B" stroke-width="3" stroke-linecap="round"/>

@@ -28,7 +28,7 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-purple-50 py-16 px-6">
+    <div className="min-h-screen bg-[#FAFAFA] py-16 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12">

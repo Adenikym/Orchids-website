@@ -4,12 +4,14 @@ import {initializePayment} from "../app/api";
 interface DonationFormData {
   email: string;
   amount: string;
+  displayAmount: string;
 }
 
 export default function DonationForm() {
   const [formData, setFormData] = useState<DonationFormData>({
     email: '',
-    amount: ''
+    amount: '',
+    displayAmount: ''
   });
   const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState({
@@ -17,9 +19,39 @@ export default function DonationForm() {
     amount: ''
   });
 
+  const formatNumberWithCommas = (value: string) => {
+    // Remove all non-digit characters except decimal point
+    const numericValue = value.replace(/[^\d.]/g, '');
+    
+    // Split into integer and decimal parts
+    const parts = numericValue.split('.');
+    
+    // Add commas to integer part
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    
+    // Rejoin with decimal point if it exists
+    return parts.join('.');
+  };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    
+    if (name === 'amount') {
+      // Remove commas to get the actual numeric value
+      const numericValue = value.replace(/,/g, '');
+      
+      // Format with commas for display
+      const formattedValue = formatNumberWithCommas(numericValue);
+      
+      setFormData(prev => ({ 
+        ...prev, 
+        amount: numericValue,
+        displayAmount: formattedValue
+      }));
+    } else {
+      setFormData(prev => ({ ...prev, [name]: value }));
+    }
+    
     setErrors(prev => ({ ...prev, [name]: '' }));
   };
 
@@ -108,7 +140,7 @@ export default function DonationForm() {
               value={formData.email}
               onChange={handleChange}
               disabled={isLoading}
-              className={`w-full px-4 py-3 border-b-2 ${
+              className={`w-full px-4 py-3 border-b-2 text-gray-700  ${
                 errors.email ? 'border-red-400' : 'border-gray-300'
               } focus:border-purple-400 focus:outline-none bg-transparent transition-colors disabled:opacity-50`}
             />
@@ -123,15 +155,13 @@ export default function DonationForm() {
               Donation Amount (₦)
             </label>
             <input
-              type="number"
+              type="text"
               id="amount"
               name="amount"
-              value={formData.amount}
+              value={formData.displayAmount}
               onChange={handleChange}
               disabled={isLoading}
               placeholder="Enter amount"
-              min="1"
-              step="0.01"
               className={`w-full text-black px-4 py-3 border-b-2 ${
                 errors.amount ? 'border-red-400' : 'border-gray-300'
               } focus:border-purple-400 focus:outline-none bg-transparent transition-colors disabled:opacity-50`}

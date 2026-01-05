@@ -1,7 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link'; // Add this import
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { Modal } from '../components/ReusableModal';
 import ContactUsContent from './ContactUsContent';
@@ -17,9 +18,10 @@ const navLinks = [
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
-    <nav className="bg-white shadow-sm">
+    <nav className="bg-[#fafafa] shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -35,15 +37,22 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-gray-700 hover:text-[#D186FF] transition-colors duration-200 text-sm font-medium"
-              >
-                {link.name}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={`transition-colors duration-200 text-sm ${
+                    isActive
+                      ? 'text-[#D186FF] font-bold'
+                      : 'text-gray-700 hover:text-[#D186FF] font-medium'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
 
           {/* CTA Buttons */}
@@ -56,7 +65,7 @@ export default function Navbar() {
             </Link>
             <button
               onClick={() => setIsOpen(true)}
-              className="px-6 py-2.5 bg-white border-2 border-gray-300 text-gray-700 rounded-full hover:border-purple-400 hover:text-purple-500 transition-all duration-200 text-sm font-medium"
+              className="px-6 py-2.5 bg-white border hover:border-2 border-[#D186FF] text-[#D186FF] rounded-full hover:border-purple-400 hover:text-purple-500 transition-all duration-200 text-sm font-medium"
             >
               Volunteer
             </button>
@@ -92,20 +101,23 @@ export default function Navbar() {
 
             {/* Menu links */}
             <div className="flex-1 px-8 pt-8 space-y-6">
-              {navLinks.map((link, index) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block text-2xl font-normal transition-colors duration-200 ${
-                    index === 0 
-                      ? 'text-purple-400' 
-                      : 'text-gray-700 hover:text-purple-400'
-                  }`}
-                >
-                  {link.name}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`block text-2xl transition-colors duration-200 ${
+                      isActive
+                        ? 'text-[#D186FF] font-bold'
+                        : 'text-gray-700 hover:text-purple-400 font-normal'
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
             </div>
 
             {/* CTA Buttons */}
