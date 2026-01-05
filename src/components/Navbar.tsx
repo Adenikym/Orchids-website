@@ -29,7 +29,7 @@ export default function Navbar() {
             <Image
               height="44"
               width="143"
-              src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762978493/orchids-purple-logo_qmdft7.png"
+              src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767581380/slazzer-preview-s8fmk_2_bunflq.svg"
               alt="Orchids Initiative Logo"
               className="object-contain"
             />
