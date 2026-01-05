@@ -26,14 +26,14 @@ export default function OurWork({ onOpenDonation }: ChildComponentProps) {
           {/* Card 1 */}
           <article className="bg-white rounded-2xl shadow-md overflow-hidden">
             <div className="relative h-[318px] ">
-              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952096/tori-bubbles_wm4b2x.png" alt="Ward Visits" fill className="object-cover" />
+              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767624939/Frame_60_hhh5g3.svg" alt="Ward Visits" fill className="object-cover" />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-semibold mb-2 text-black text-center">Ward Visits</h3>
-              <p className="text-gray-600 text-sm mb-6 text-center">We bring laughter, and companionship to children receiving treatment. Each visit helps ease anxiety, increase smiles, and remind them they’re not alone.</p>
+              <h3 className="text-base md:text-2xl font-semibold mb-2 text-black text-center">Ward Visits</h3>
+              <p className="text-[#3D3E3F] text-xs md:text-base mb-6 text-center">We bring laughter, and companionship to children receiving treatment. Each visit helps ease anxiety, increase smiles, and remind them they’re not alone.</p>
               <div className="text-center">
                 <Link href="/work">
-                <button className="px-6 py-2.5 rounded-full border-2 border-purple-200 text-purple-600 hover:bg-purple-50 transition">Learn More</button>
+                <button className="px-6 py-2.5 rounded-full border border-[#D186FF] text-[#D186FF] hover:bg-purple-50 transition">Learn More</button>
                 </Link>
               </div>
             </div>
@@ -42,14 +42,14 @@ export default function OurWork({ onOpenDonation }: ChildComponentProps) {
           {/* Card 2 */}
           <article className="bg-white rounded-2xl shadow-md overflow-hidden">
             <div className="relative h-[318px] ">
-              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952029/liwom-group_lho9in.png" alt="Events" fill className="object-cover" />
+              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767625831/Frame_60_2_kn0wod.svg" alt="Events" fill className="object-cover" />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-semibold mb-2 text-black text-center">Events</h3>
-              <p className="text-gray-600 text-sm mb-6 text-center">Through games, art, and storytelling, we create moments of joy for children in orphanages. Every playday reminds them they are seen, loved, and valued.</p>
+              <h3 className="text-base md:text-2xl font-semibold mb-2 text-black text-center">Events</h3>
+              <p className="text-[#3D3E3F] text-xs md:text-base mb-6 text-center">Through games, art, and storytelling, we create moments of joy for children in orphanages. Every playday reminds them they are seen, loved, and valued.</p>
               <div className="text-center">
                 <Link href="#events">
-                <button className="px-6 py-2.5 rounded-full border-2 border-purple-200 text-purple-600 hover:bg-purple-50 transition">See Events</button>
+                <button className="px-6 py-2.5 rounded-full border border-[#D186FF] text-[#D186FF] hover:bg-purple-50 transition">See Events</button>
                 </Link>
               </div>
             </div>
@@ -58,14 +58,14 @@ export default function OurWork({ onOpenDonation }: ChildComponentProps) {
           {/* Card 3 */}
           <article className="bg-white rounded-2xl shadow-md overflow-hidden">
             <div className="relative h-[318px] ">
-              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1762952062/center-art_m6veu2.png" alt="Play Therapy Programs" fill className="object-cover" />
+              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767625933/Frame_60_3_gr91p6.svg" alt="Play Therapy Programs" fill className="object-cover" />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-semibold mb-2 text-black text-center">Play Therapy Programs</h3>
-              <p className="text-gray-600 text-sm mb-6 text-center">Our guided play therapy sessions use art, music, and storytelling to help children heal emotionally while supporting their overall well‑being.</p>
+              <h3 className="text-base md:text-2xl font-semibold mb-2 text-black text-center">Play Therapy Programs</h3>
+              <p className="text-[#3D3E3F] text-xs md:text-base mb-6 text-center">Our guided play therapy sessions use art, music, and storytelling to help children heal emotionally while supporting their overall well‑being.</p>
               <div className="text-center">
                 
-                <button  onClick={onOpenDonation} className="px-6 py-2.5 rounded-full border-2 border-purple-200 text-purple-600 hover:bg-purple-50 transition">Donate Now</button>
+                <button  onClick={onOpenDonation} className="px-6 py-2.5 rounded-full border border-[#D186FF] text-[#D186FF] hover:bg-purple-50 transition">Donate Now</button>
               
               </div>
             </div>

@@ -63,7 +63,7 @@ export default function OurHistory() {
             <div className="relative rounded-3xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
               <div className="aspect-[4/3] relative">
                 <Image
-                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1764511434/Frame_29_1_mnsf9g.png"
+                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767629986/Frame_29_1_qckrhu.svg"
                   alt="Orchids volunteers engaging with young patients in hospital ward, doing creative activities"
                   fill
                   className="object-cover"
@@ -81,7 +81,7 @@ export default function OurHistory() {
               <Star className="w-full h-full" />
             </div>
             <p className="text-gray-700 text-lg leading-relaxed pl-8">
-              Orchids was founded in March 2022 by Etore Efiom-Ekaha, a compassionate medical student inspired by her encounter with an orphaned child in the pediatric ward of University College Hospital, Ibadan. A simple coloring book brought unexpected comfort and joy to the young patient, sparking a mission to bring light and hope to children in hospital care.
+              Orchids was founded in March 2022 by Etore Efiom-Ekaha, a compassionate medical student and her friends inspired by their encounter with an orphaned child in the pediatric ward of University College Hospital, Ibadan. A simple coloring book brought unexpected comfort and joy to the young patient, sparking a mission to bring light and hope to children in hospital care.
             </p>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default function OurHistory() {
             <div className="relative rounded-3xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
               <div className="aspect-[4/3] relative">
                 <Image
-                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1764514571/Frame_43_1_pwwcsu.png"
+                  src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767629986/Frame_43_zogkhf.svg"
                   alt="Orchids volunteer in yellow shirt with young patient and another volunteer blowing bubbles"
                   fill
                   className="object-cover"

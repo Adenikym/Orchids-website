@@ -47,7 +47,8 @@ const ProgramSection: FC<ProgramSectionProps> = ({
                 src={imageSrc}
                 alt={imageAlt}
                 className="w-full h-auto object-cover"
-                fill
+                width={600}
+                height={600}
               />
             </div>
             {/* Decorative circles */}
@@ -103,7 +104,7 @@ const ProgramSections: FC = () => {
       highlightWord: "happy",
       description: "Every month, our volunteers visit pediatric wards with art materials, musical instruments, and STEM-based games. These sessions help children express themselves, ease anxiety, and rediscover the joy of being kids again even while receiving treatment.",
       buttonText: "Learn More",
-      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1762952096/tori-bubbles_wm4b2x.png",
+      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767632132/Rectangle_15_ec7yaz.svg",
       imageAlt: "Volunteer with children during ward visit",
       imagePosition: "right"
     },
@@ -113,7 +114,7 @@ const ProgramSections: FC = () => {
       highlightWord: "lack",
       description: "Through OrchidsAid we provide financial and medical support to indigent families struggling with medical bills or essential supplies. No family should find children receive the care they need without financial barriers standing in the way of recovery.",
       buttonText: "Donate Now",
-      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1765123255/Pie_Chart_1_gachui.png",
+      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767631817/Group_87_lxs03i.svg",
       imageAlt: "Happy family receiving support",
       imagePosition: "left"
     }

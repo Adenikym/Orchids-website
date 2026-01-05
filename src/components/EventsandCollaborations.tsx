@@ -33,7 +33,7 @@ export default function EventsAndCollaborators() {
     },
     {
       name: "Chateaurare",
-      logo: "https://res.cloudinary.com/da1snxdv9/image/upload/v1762952062/Chateaurare_rl5bbx.png"
+      logo: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767627898/Chateaurare_l23qcj.svg"
     },
     {
       name: "Living Word Mission",
@@ -42,7 +42,7 @@ export default function EventsAndCollaborators() {
   ];
 
   return (
-    <div id="events" className="min-h-screen bg-gray-50 py-16 px-8 md:px-16 relative overflow-hidden">
+    <div id="events" className=" bg-gray-50 py-16 px-8 md:px-16 relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-10 right-32 w-32 h-32 opacity-10">
         <svg viewBox="0 0 100 100" className="text-purple-300">
@@ -183,7 +183,7 @@ export default function EventsAndCollaborators() {
 Our collaborators share our heart for children, joining us to bring color, comfort, and creativity to hospital spaces. Together, we create moments of joy that remind every child they&apos;re not alone in their healing journey.          </p>
 
           {/* Collaborators Logos */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-2  md:grid-cols-4 gap-8 mb-12">
             {collaborators.map((collaborator, index) => (
               <div 
                 key={index}

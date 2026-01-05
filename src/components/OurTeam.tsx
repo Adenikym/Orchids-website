@@ -6,17 +6,17 @@ const teamMembers = [
   {
     name: "Etore Efiom-Ekaha",
     role: "Founder & Chairman of the Board",
-    image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1764511430/Ellipse_7_4_omwuht.png"
+    image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767630474/Ellipse_7_7_vmiafl.png"
   },
   {
     name: "Chisom Okoye",
     role: "Co-founder",
-    image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1764511430/Ellipse_8_4_bk3axz.png"
+    image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767630628/Ellipse_7_1_vtymzw.svg"
   },
   {
     name: "Rhoda Etta",
     role: "Co-founder",
-    image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1764511427/Ellipse_7_5_uoaykv.png"
+    image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767630628/Ellipse_7_2_gapj1v.svg"
   },
   {
     name: "Maryam Mudasiru",
@@ -26,12 +26,12 @@ const teamMembers = [
   {
     name: "Akande Timi",
     role: "Head of Activities & Logistics",
-    image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1764511430/Ellipse_8_3_dfpjkg.png"
+    image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767630862/Ellipse_8_2_cxipx5.svg"
   },
   {
     name: "Tolulope Oyebola",
     role: "Head of Finance and Administration",
-    image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1764511430/Ellipse_8_4_bk3axz.png"
+    image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767630629/Ellipse_8_1_kzle8j.svg"
   },
   {
     name: "Sharon Ugboja",

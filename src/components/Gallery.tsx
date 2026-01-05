@@ -5,32 +5,32 @@ import { ArrowRight } from 'lucide-react';
 export default function Gallery() {
   const galleryItems = [
     {
-      image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop",
+      image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767629213/Frame_104_g6tcy6.svg",
       title: "Ward Visits",
       date: "May, 2025"
     },
     {
-      image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=400&fit=crop",
+      image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767629332/Frame_115_1_n9wpko.svg",
       title: "Ward visits",
       date: "June, 2025"
     },
     {
-      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop",
+      image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767629214/Frame_107_s2veag.svg",
       title: "Community Outreach",
       date: "July, 2025"
     },
     {
-      image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&h=400&fit=crop",
+      image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767629213/Frame_105_iklnqd.svg",
       title: "Orphanage Visits",
       date: "August, 2025"
     },
     {
-      image: "https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=600&h=400&fit=crop",
+      image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767629214/Frame_115_rejcjb.svg",
       title: "Ward visits",
       date: "June, 2025"
     },
     {
-      image: "https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=600&h=400&fit=crop",
+      image: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767629214/Frame_108_sck8y7.svg",
       title: "Ward Visits",
       date: "October, 2025"
     }
@@ -143,7 +143,7 @@ export default function Gallery() {
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                    height="393"
-                  width="396"
+                  width="399"
                     src={item.image}
                     alt={item.title}
                     
@@ -166,14 +166,14 @@ export default function Gallery() {
         </div>
 
         {/* See More Button */}
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button className="group flex items-center gap-3 px-8 py-4 text-purple-500 text-xl font-semibold hover:text-purple-600 transition-colors">
             <span className="border-b-2 border-purple-500 group-hover:border-purple-600">
               See More
             </span>
             <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

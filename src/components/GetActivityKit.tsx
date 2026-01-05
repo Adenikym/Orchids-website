@@ -35,7 +35,7 @@ export default function ImpactStories() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA] p-8 md:p-16">
+    <div className=" bg-[#FAFAFA] px-8 md:px-16 py-8 md:py-10">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12 relative">
@@ -161,7 +161,7 @@ export default function ImpactStories() {
 
             {/* Author Info */}
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-20 h-20 rounded-full overflow-hidden shadow-lg bg-gray-300 border-4 border-white relative">
+              {/* <div className="w-20 h-20 rounded-full overflow-hidden shadow-lg bg-gray-300 border-4 border-white relative">
                 <img 
                   height="102"
                   width="102"
@@ -169,7 +169,7 @@ export default function ImpactStories() {
                   alt={stories[currentStory].author}
                   className="object-cover w-full h-full"
                 />
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-2xl font-bold text-purple-500">
                   {stories[currentStory].author}

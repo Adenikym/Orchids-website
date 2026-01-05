@@ -129,7 +129,7 @@ const ProgramSections: FC<{
       highlightWord: "happy",
       description: "Every month, our volunteers visit pediatric wards with art materials, musical instruments, and STEM-based games. These sessions help children express themselves, ease anxiety, and rediscover the joy of being kids again even while receiving treatment.",
       buttonText: "Donate Now",
-      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1762952096/tori-bubbles_wm4b2x.png",
+      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767631236/Rectangle_14_gwdqoq.svg",
       imageAlt: "Volunteer with children during ward visit",
       imagePosition: "left",
       buttonAction: openDonationModal
@@ -140,7 +140,7 @@ const ProgramSections: FC<{
       highlightWord: "lack",
       description: "Through OrchidsAid we provide financial and medical support to indigent families struggling with medical bills or essential supplies. No family should find children receive the care they need without financial barriers standing in the way of recovery.",
       buttonText: "Donate Now",
-      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1765116194/Rectangle_14_3_hzb0lc.png",
+      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767631647/Rectangle_14_4_eg36fn.svg",
       imageAlt: "Happy family receiving support",
       imagePosition: "right",
       buttonAction: openDonationModal
@@ -151,7 +151,7 @@ const ProgramSections: FC<{
       highlightWord: "together",
       description: "We collaborate with schools, organizations, and corporate partners to expand our reach and sustain our mission. Through these partnerships, we organize community programs, donation drives, and educational programs that support both kids and their families.",
       buttonText: "Partner with us",
-      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1765116191/Rectangle_14_4_at23db.png",
+      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767631235/Rectangle_14_1_uaswtw.svg",
       imageAlt: "Community partnership volunteers",
       imagePosition: "left",
       buttonAction: openCollabModal
@@ -162,7 +162,7 @@ const ProgramSections: FC<{
       highlightWord: "empowering",
       description: "Our volunteers are the heart of Orchids. We train them in therapeutic play, child psychology, and creative facilitation equipping them to provide compassionate, high-quality emotional support to every child they meet.",
       buttonText: "Volunteer Now",
-      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1765116191/Rectangle_14_5_gqvyrn.png",
+      imageSrc: "https://res.cloudinary.com/da1snxdv9/image/upload/v1767631236/Rectangle_14_2_v18vtb.svg",
       imageAlt: "Community partnership volunteers",
       imagePosition: "right",
       buttonAction: openVolunteerModal

@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Donations({ showHeader = false }) {
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8 md:p-16 relative overflow-hidden">
+    <div className=" bg-gray-50 px-8 md:px-16 py-8 md:py-10 relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-10 right-32 w-32 h-32 opacity-10">
         <svg viewBox="0 0 100 100" className="text-purple-300">

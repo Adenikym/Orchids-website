@@ -179,7 +179,7 @@ export default function ActivityKit() {
               <Image
                 width="618"
                 height="678"
-                src="https://res.cloudinary.com/da1snxdv9/image/upload/v1765116195/Rectangle_14_2_vzlbqx.png"
+                src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767627240/Rectangle_14_zijmfp.svg"
                 alt="Children doing creative activities with colorful paper crafts"
                 className="w-full h-auto object-cover"
               />
