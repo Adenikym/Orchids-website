@@ -37,7 +37,7 @@ export default function Gallery() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8 md:p-16 relative overflow-hidden">
+    <div id="gallery" className="min-h-screen bg-gray-50 p-8 md:p-16 relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-20 right-20 w-32 h-32 opacity-10">
         <svg viewBox="0 0 100 100" className="text-purple-300">

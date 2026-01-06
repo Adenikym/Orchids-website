@@ -29,7 +29,7 @@ export default function FAQSection() {
   };
 
   return (
-    <div className=" bg-gray-50 py-16 px-8 md:px-16 relative overflow-hidden">
+    <div id="faq" className=" bg-gray-50 py-16 px-8 md:px-16 relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-10 right-32 w-32 h-32 opacity-10">
         <svg viewBox="0 0 100 100" className="text-purple-300">

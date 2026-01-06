@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Instagram, Twitter, Linkedin, Music2 } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -15,25 +16,26 @@ export default function Footer() {
   };
 
   const quickLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Our work', href: '#work' },
-    { name: 'Donation', href: '#donation' }
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Our work', href: '/work' },
+    { name: 'Donation', href: '/donation' }
   ];
 
   const moreLinks = [
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Contact Us', href: '#contact' },
-    { name: 'Volunteer', href: '#volunteer' },
-    { name: 'Events', href: '#events' },
-    { name: 'FAQ', href: '#faq' }
+    { name: 'Gallery', href: '/#gallery' },
+    { name: 'Contact Us', href: '/contact' },
+    { name: 'Volunteer', href: '/work' },
+    { name: 'Events', href: '/#events' },
+    { name: 'FAQ', href: '/#faq' }
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
-    { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' }
+   
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/orchidsforkids?igsh=aWJseWlyYTh1ZTdm' },
+    { name: 'Twitter', icon: Twitter, href: 'https://x.com/orchidsforkids?s=21' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/orchidsforkids/' },
+     { name: 'Tiktok', icon: Music2, href: 'https://www.tiktok.com/@orchidsforkids?_r=1&_t=ZS-92p40diZtEA' },
   ];
 
   return (
@@ -61,12 +63,12 @@ export default function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-gray-300 hover:text-white transition-colors inline-block"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -99,7 +101,10 @@ export default function Footer() {
                     href={social.href}
                     className="text-gray-300 hover:text-white transition-colors inline-flex items-center gap-2"
                   >
-                    <social.icon className="w-5 h-5" />
+                   
+                        <social.icon className="w-5 h-5" />
+
+                    
                     {social.name}
                   </a>
                 </li>
@@ -135,10 +140,10 @@ export default function Footer() {
       </div>
 
       {/* Copyright Bar */}
-      <div className="border-t border-gray-700">
+      <div className="border-t border-gray-700 bg-white">
         <div className="max-w-7xl mx-auto px-8 py-6 md:px-16">
           <p className="text-center text-gray-400 text-sm">
-            © 2025 Orchids Initiative. All rights reserved.
+            © 2026 Orchids Initiative. All rights reserved.
           </p>
         </div>
       </div>
