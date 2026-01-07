@@ -7,8 +7,12 @@ import DonationDetails from "../../components/DonationDetails";
 import DonationHero from "../../components/DonationHero";
 import GetActivityKit from '@/components/GetActivityKit';
 import Donations from "@/components/Donations";
+import { Modal } from "@/components/ReusableModal";
+import DonationForm from "@/components/DonationContent";
 
 export default function Donation() {
+  const [isOpen, setIsOpen] = useState(false);
+  const openDonationModal = () => setIsOpen(true);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,14 +55,14 @@ console.log(responseMessage)
   console.log(handleSubmit);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col overflow-hidden">
       {/* Header/Navigation */}
       <Navbar/>
       
       {/* Main Content */}
       <main className="flex-grow  ">
 <DonationHero/>
-<DonationDetails/>
+<DonationDetails openDonationModal={openDonationModal}/>
       </main>
 
       <Donations/>
@@ -67,6 +71,9 @@ console.log(responseMessage)
 
       {/* Footer */}
      <Footer/>
+     <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} maxWidth="xl">
+             <DonationForm />
+           </Modal>
     </div>
   );
 }

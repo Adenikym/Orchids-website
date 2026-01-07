@@ -25,11 +25,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="relative w-36 h-11 mb-4">
+          <div className="relative w-36 md:w-auto h-11 mb-4">
             <Image
-              height="44"
-              width="143"
-              src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767581380/slazzer-preview-s8fmk_2_bunflq.svg"
+              height="60"
+              width="200"
+              src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767776034/slazzer-preview-bnb6o_1_jij7pb.svg"
               alt="Orchids Initiative Logo"
               className="object-contain"
             />
