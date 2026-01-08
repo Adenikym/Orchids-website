@@ -8,7 +8,7 @@ export default function HeroSection({ onOpenDonation }: ChildComponentProps) {
   return (
     <div className=" flex flex-col md:flex-row bg-gradient-to-b from-[#f9f5fb] to-[#FAFAFA] p-0 md:p-20  items-center justify-between overflow-hidden">
        <Image
-                className='block md:hidden'
+                className='block lg:hidden'
                 src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767580759/Group_88_dbowjr.png"
                 alt="Orchids Initiative Logo"
                 width={370}
@@ -87,7 +87,7 @@ export default function HeroSection({ onOpenDonation }: ChildComponentProps) {
       </div>
    
 
-<div className="hidden md:block">
+<div className="hidden xl:block">
       <Image
         className='absolute top-100 hidden md:block md:w-[350px] md:h-[233px] lg:w-[546px] lg:h-[364px]'
         src="https://res.cloudinary.com/da1snxdv9/image/upload/v1763238763/realistic-scene-with-young-children-with-autism-playing_3_zzwrwf.png"
