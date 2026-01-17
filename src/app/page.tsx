@@ -44,7 +44,7 @@ export default function Home() {
       {/* Main Content */}
       <main className="flex-grow">
         {/* Hero Section */}
-        <HeroSection onOpenDonation={openDonationModal} />
+        <HeroSection onOpenDonation={openDonationModal} onOpenVolunteer={openVolunteerModal} />
   <AboutUsSection/>
 
   {/* Our Work Section (from Figma design) */}

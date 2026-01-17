@@ -20,7 +20,7 @@ export default function FAQSection() {
     },
     {
       question: "Where do you operate?",
-      answer: "We currently operate in hospitals and orphanages across Lagos, Nigeria. We're constantly expanding our reach to serve more children in need. If you know of a facility that could benefit from our services, please reach out to us."
+      answer: "We currently operate in hospitals and orphanages across Lagos and Ibadan, Nigeria. We're constantly expanding our reach to serve more children in need. If you know of a facility that could benefit from our services, please reach out to us."
     }
   ];
 

@@ -22,23 +22,23 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#fafafa] shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto pl-0 pr-4 px-0 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="relative  mb-4">
             <Image
-              height="60"
-              width="200"
-              src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767776034/slazzer-preview-bnb6o_1_jij7pb.svg"
+              height="80"
+              width="250"
+              src="https://res.cloudinary.com/da1snxdv9/image/upload/v1768652062/yellow-logo_nr74aw.svg"
               alt="Orchids Initiative Logo"
-              className="object-contain hidden md:block"
+              className="object-contain hidden md:block mt-8"
             />
             <Image
-              height="50"
-              width="180"
-              src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767776034/slazzer-preview-bnb6o_1_jij7pb.svg"
+              height="60"
+              width="200"
+              src="https://res.cloudinary.com/da1snxdv9/image/upload/v1768652062/yellow-logo_nr74aw.svg"
               alt="Orchids Initiative Logo"
-              className="object-contain block md:hidden"
+              className="object-contain block md:hidden mt-5"
             />
           </div>
 

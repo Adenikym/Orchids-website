@@ -2,9 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 interface ChildComponentProps {
   onOpenDonation: () => void;
+  onOpenVolunteer: () => void;
 }
 
-export default function HeroSection({ onOpenDonation }: ChildComponentProps) {
+export default function HeroSection({ onOpenDonation, onOpenVolunteer }: ChildComponentProps) {
   return (
     <div className=" flex flex-col md:flex-row bg-gradient-to-b from-[#f9f5fb] to-[#FAFAFA] p-0 md:p-20  items-center justify-between overflow-hidden">
        <Image
@@ -34,7 +35,7 @@ export default function HeroSection({ onOpenDonation }: ChildComponentProps) {
               Donate
             </button>
             <button
-              onClick={onOpenDonation}
+              onClick={onOpenVolunteer}
               className="px-6 py-2.5 bg-white border hover:border-2 border-[#D186FF] text-[#D186FF] rounded-full hover:border-purple-400 hover:text-purple-500 transition-all duration-200 text-sm font-medium"
             >
               Volunteer
