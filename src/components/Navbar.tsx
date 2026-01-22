@@ -33,13 +33,13 @@ export default function Navbar() {
               alt="Orchids Initiative Logo"
               className="object-contain hidden md:block mt-8 -ml-0 xl:-ml-6"
             />
-            <Image
+            <img
               height="60"
               width="200"
               src="https://res.cloudinary.com/da1snxdv9/image/upload/v1768652062/yellow-logo_nr74aw.svg"
               alt="Orchids Initiative Logo"
               className="object-contain block md:hidden mt-5"
-               quality={100}
+             
             />
           </div>
 
