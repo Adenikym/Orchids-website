@@ -58,7 +58,7 @@ export default function OurWork({ onOpenDonation }: ChildComponentProps) {
           {/* Card 3 */}
           <article className="bg-white rounded-2xl shadow-md overflow-hidden">
             <div className="relative h-[318px] ">
-              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767625933/Frame_60_3_gr91p6.svg" alt="Play Therapy Programs" fill className="object-cover" />
+              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767625933/Frame_60_3_gr91p6.svg" alt="Play Therapy Programs" fill className="object-cover" quality={100} />
             </div>
             <div className="p-6">
               <h3 className="text-base md:text-2xl font-semibold mb-2 text-black text-center">Play Therapy Programs</h3>
