@@ -8,13 +8,13 @@ interface ChildComponentProps {
 export default function HeroSection({ onOpenDonation, onOpenVolunteer }: ChildComponentProps) {
   return (
     <div className=" flex flex-col md:flex-row bg-gradient-to-b from-[#f9f5fb] to-[#FAFAFA] p-0 md:p-20  items-center justify-between overflow-hidden">
-       <Image
+       <img
                 className='block lg:hidden'
                 src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767580759/Group_88_dbowjr.png"
                 alt="Orchids Initiative Logo"
-                width={370}
-                height={356}
-                quality={100}
+                width="370"
+                height="356"
+                
                 
                
               />
