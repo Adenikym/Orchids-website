@@ -132,6 +132,7 @@ export default function AboutUsSection() {
                 <Image 
                   height="276"
                   width="343"
+                  quality={100}
                   src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767638150/Frame_29_3_w6jwl5.svg" 
                   alt="Orchids team members in purple and yellow shirts"
                   className="block md:hidden w-full h-full object-cover"
