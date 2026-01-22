@@ -169,7 +169,7 @@ export default function ActivityKit() {
     {/* Right Column - Image */}
     <div className="relative order-1 lg:order-2">
       <div className="relative rounded-2xl overflow-hidden ">
-        <Image
+        <img
           width="618"
           height="678"
           src="https://res.cloudinary.com/da1snxdv9/image/upload/v1769083936/Group_95_vav4uj.svg"
