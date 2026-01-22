@@ -26,7 +26,8 @@ export default function OurWork({ onOpenDonation }: ChildComponentProps) {
           {/* Card 1 */}
           <article className="bg-white rounded-2xl shadow-md overflow-hidden">
             <div className="relative h-[318px] ">
-              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767624939/Frame_60_hhh5g3.svg" alt="Ward Visits" fill className="object-cover"  quality={100} />
+              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767624939/Frame_60_hhh5g3.svg" alt="Ward Visits" fill className="object-cover hidden md:block"  quality={100}  />
+               <img src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767624939/Frame_60_hhh5g3.svg" alt="Ward Visits"  className="object-cover block md:hidden w-full"    />
             </div>
             <div className="p-6">
               <h3 className="text-base md:text-2xl font-semibold mb-2 text-black text-center">Ward Visits</h3>
@@ -42,7 +43,8 @@ export default function OurWork({ onOpenDonation }: ChildComponentProps) {
           {/* Card 2 */}
           <article className="bg-white rounded-2xl shadow-md overflow-hidden">
             <div className="relative h-[318px] ">
-              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767625831/Frame_60_2_kn0wod.svg" alt="Events" fill className="object-cover"  quality={100} />
+              <Image src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767625831/Frame_60_2_kn0wod.svg" alt="Events" fill className="object-cover hidden md:block"  quality={100} />
+              <img src="https://res.cloudinary.com/da1snxdv9/image/upload/v1767625831/Frame_60_2_kn0wod.svg" alt="Events" className="object-cover w-full block md:hidden"   />
             </div>
             <div className="p-6">
               <h3 className="text-base md:text-2xl font-semibold mb-2 text-black text-center">Events</h3>
