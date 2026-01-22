@@ -14,7 +14,7 @@ export default function HeroSection({ onOpenDonation, onOpenVolunteer }: ChildCo
                 alt="Orchids Initiative Logo"
                 width={370}
                 height={356}
-               
+                quality={100}
                 
                
               />
