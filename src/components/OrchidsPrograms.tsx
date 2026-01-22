@@ -158,7 +158,7 @@ const ProgramSections: FC<{
     },
         {
       badge: "VOLUNTEER DEVELOPMENT",
-      title: "WWe are Empowering young hearts to serve",
+      title: "We are Empowering young hearts to serve",
       highlightWord: "empowering",
       description: "Our volunteers are the heart of Orchids. We train them in therapeutic play, child psychology, and creative facilitation equipping them to provide compassionate, high-quality emotional support to every child they meet.",
       buttonText: "Volunteer Now",

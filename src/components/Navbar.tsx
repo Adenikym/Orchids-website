@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#fafafa] shadow-sm">
-      <div className="max-w-7xl mx-auto pl-0 pr-4 px-0 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto pl-0 pr-4 px-0 sm:pr-6 lg:pr-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="relative  mb-4">
@@ -31,7 +31,7 @@ export default function Navbar() {
               width="250"
               src="https://res.cloudinary.com/da1snxdv9/image/upload/v1768652062/yellow-logo_nr74aw.svg"
               alt="Orchids Initiative Logo"
-              className="object-contain hidden md:block mt-8"
+              className="object-contain hidden md:block mt-8 -ml-0 xl:-ml-6"
             />
             <Image
               height="60"

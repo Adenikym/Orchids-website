@@ -134,7 +134,7 @@ export default function Contact() {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <p>&copy; 2025 Orchids Organization. All rights reserved.</p>
+          <p>&copy; 2026 Orchids Organization. All rights reserved.</p>
         </div>
       </footer>
     </div>

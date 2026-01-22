@@ -7,17 +7,17 @@ export default function EventsAndCollaborators() {
   const [isCollabOpen, setIsCollabOpen] = useState(false);
   const events = [
     {
-      date: "01",
-      month: "OCT",
-      year: "2025",
-      category: "Hospital Visit",
+      date: "24",
+      month: "JAN",
+      year: "2026",
+      category: "Hospital Ward Visit",
       title: "A day with our wonderful children"
     },
     {
-      date: "01",
-      month: "OCT",
-      year: "2025",
-      category: "Orphanage Visit",
+      date: "21",
+      month: "FEB",
+      year: "2026",
+      category: "Hospital Ward Visit",
       title: "A day to make a difference"
     }
   ];
