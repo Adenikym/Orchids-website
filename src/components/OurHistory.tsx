@@ -81,7 +81,7 @@ export default function OurHistory() {
               <Star className="w-full h-full" />
             </div>
             <p className="text-gray-700 text-lg leading-relaxed pl-8">
-              Orchids was founded in March 2022 by Etore Efiom-Ekaha, a compassionate medical student and her friends inspired by their encounter with an orphaned child in the pediatric ward of University College Hospital, Ibadan. A simple coloring book brought unexpected comfort and joy to the young patient, sparking a mission to bring light and hope to children in hospital care.
+              Orchids was founded in March 2022 by Etore Efiom-Ekaha, a compassionate medical student inspired by her encounter with an orphaned child in the pediatric ward of University College Hospital, Ibadan. A simple coloring book brought unexpected comfort and joy to the young patient, sparking a mission to bring light and hope to children in hospital care.
             </p>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function OurHistory() {
               <Sparkles className="w-full h-full" />
             </div>
             <p className="text-gray-700 text-lg leading-relaxed pl-8">
-              What started as one act of kindness has grown into a vibrant volunteer-driven initiative. By December 2022, Etore and her peers began engaging young patients with creative activities that ease pain, foster resilience, and brighten their hospital experience.
+              What started as one act of kindness has grown into a vibrant volunteer-driven initiative. By December 2022, Etore and her friends began engaging young patients with creative activities that ease pain, foster resilience, and brighten their hospital experience.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed pl-8">
               In 2023, Orchids was officially incorporated under Section 26 of the Companies Allied Matters Act (CAMA). Today, it continues to transform hospital stays into moments of connection, creativity, and healing fulfilling its mission to share smiles in spite of suffering.
